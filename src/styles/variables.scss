@@ -1,0 +1,31 @@
+/* Global variables
+========================================================================== */
+
+$font-heading: "Miller Banner Light", serif;
+$font-heading-thick: "Miller Banner Black", serif;
+$font-body-medium: "Hind SemiBold", -apple-system, sans-serif;
+$font-body-bold: "Hind Bold", -apple-system, sans-serif;
+$font-body: "Hind Regular", -apple-system, sans-serif;
+$font-mono: "Magda", monospace;
+
+// colors
+$white: #fff;
+$white-soft: #f9f9f9;
+$true-black: #000000;
+$black: rgba(0, 14, 27, 1);
+$black: rgba(33, 43, 53, 1);
+$black-soft: rgba(33, 43, 53, 1);
+$grey: #495057;
+$grey: darken(#868e96, 14);
+
+$blue: #a8c1e8;
+$light-blue: #f8fcff;
+$blue-dark: rgba(0, 6, 58, 1);
+$blue-dark: #004070;
+$pink: pink;
+$green: #006630;
+$purple: #7247c0;
+
+$color-main: $blue-dark;
+$color-accent: #016ba4;
+$color-accent: royalblue;

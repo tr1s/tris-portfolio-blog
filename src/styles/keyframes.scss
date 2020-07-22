@@ -1,0 +1,115 @@
+/* Keyframe animations
+  ======================================================================== */
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg) scale(1);
+  }
+
+  to {
+    transform: rotate(360deg) scale(1);
+  }
+}
+
+// @keyframes blink1 {
+//   0% {
+//     color: $black;
+//   }
+//   100% {
+//     color: lighten($purple, 16);
+//   }
+// }
+// @keyframes blink2 {
+//   0% {
+//     color: $black;
+//   }
+//   100% {
+//     color: $pink;
+//   }
+// }
+// @keyframes blink3 {
+//   0% {
+//     color: $black;
+//   }
+//   100% {
+//     color: #95c047;
+//   }
+// }
+// @keyframes blink4 {
+//   0% {
+//     color: $black;
+//   }
+//   100% {
+//     color: #78a6ff;
+//   }
+// }
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+// .project-link::after {
+//   content: '';
+//   position: absolute;
+//   bottom: 0;
+//   left: 0;
+//   right: 0;
+//   height: 0.4rem;
+//   border-radius: 0.4rem;
+//   background: repeating-linear-gradient(
+//     135deg,
+//     rgba(0, 0, 0, 1),
+//     20px,
+//     rgba(0, 0, 0, 1) 20px,
+//     rgba(0, 0, 0, 1) 40px,
+//     rgba(0, 0, 0, 1) 40px,
+//     rgba(0, 0, 0, 1) 60px,
+//     rgba(0, 0, 0, 1) 60px,
+//     rgba(0, 0, 0, 1) 80px
+//   );
+//   background: repeating-linear-gradient(
+//     135deg,
+//     rgba(0, 0, 0, 1),
+//     20px,
+//     transparent 20px,
+//     transparent 40px,
+//     rgba(0, 0, 0, 1) 40px,
+//     rgba(0, 0, 0, 1) 60px,
+//     transparent 60px,
+//     transparent 80px
+//   );
+//   transition: 1s all ease;
+// }
+// .project-link:hover::after {
+//   height: 0.25rem;
+//   background: repeating-linear-gradient(
+//     135deg,
+//     rgba(0, 0, 0, 1),
+//     20px,
+//     transparent 20px,
+//     transparent 40px,
+//     $pink 40px,
+//     $pink 60px,
+//     transparent 60px,
+//     transparent 80px
+//   );
+// }
+
+// background: linear-gradient(
+// -145deg,
+// rgba(114, 71, 192, 0.12),
+// rgba(2, 0, 0, 0.05),
+// rgba(33, 97, 242, 0.1),
+// rgba(210, 227, 222, 0.7)
+// );
+// background: lighten($grey, 39);
+// background-size: 400% 400%;
+// animation: gradient 6s ease infinite;

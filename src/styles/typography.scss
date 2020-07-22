@@ -1,0 +1,87 @@
+/* Global typography styles
+========================================================================== */
+
+@font-face {
+  font-family: 'Hind Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Hind Regular'), local('Hind-Regular'),
+    url('../assets/fonts/hind-v9-latin-regular.woff2') format('woff2'),
+    url('../assets/fonts/hind-v9-latin-regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Hind SemiBold';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Hind SemiBold'), local('Hind-SemiBold'),
+    url('../assets/fonts/hind-v9-latin-600.woff2') format('woff2'),
+    url('../assets/fonts/hind-v9-latin-600.woff') format('woff');
+}
+/* hind-700 - latin */
+@font-face {
+  font-family: 'Hind Bold';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Hind Bold'), local('Hind-Bold'),
+    url('../assets/fonts/hind-v10-latin-700.woff2') format('woff2'),
+    url('../assets/fonts/hind-v10-latin-700.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Miller Banner Light';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Miller Banner Light'), local('MillerBannerLight'),
+    url('../assets/fonts/MillerBannerLight.woff') format('woff');
+}
+@font-face {
+  font-family: 'Miller Banner Bold';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Miller Banner Bold'), local('MillerBannerBold'),
+    url('../assets/fonts/MillerBannerBold.woff') format('woff');
+}
+@font-face {
+  font-family: 'Miller Banner Black';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Miller Banner Black'), local('MillerBannerBlack'),
+    url('../assets/fonts/MillerBannerBlack.woff') format('woff');
+}
+@font-face {
+  font-family: 'Miller Banner Black Italic';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Miller Banner Black Italic'), local('MillerBannerBlackItalic'),
+    url('../assets/fonts/MillerBannerBlackItalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Magda';
+  font-style: normal;
+  font-weight: 600;
+  src: local('MagdaCleanMono Regular'), local('MagdaCleanMono-Regular'),
+    url('../assets/fonts/MagdaCleanMono-Regular.woff') format('woff'),
+    url('../assets/fonts/MagdaCleanMono-Regular.otf') format('opentype'),
+    url('../assets/fonts/MagdaCleanMono-Regular.ttf') format('truetype');
+}
+
+html {
+  font-size: 62.5%; // 1rem = 10px, 3.5rem = 35px;
+}
+
+body {
+  font-family: $font-body;
+  font-size: 1.6rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}

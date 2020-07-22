@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="46px" height="42px" viewBox="0 0 46 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>piano</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-8.7%" y="-10.0%" width="117.4%" height="120.0%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0.129411765   0 0 0 0 0.380392157   0 0 0 0 0.949019608  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="piano" filter="url(#filter-1)" fill-rule="nonzero">
+            <path d="M43,0 L3,0 C1.34315,0 0,1.34315 0,3 L0,37 C0,38.65685 1.34315,40 3,40 L43,40 C44.65685,40 46,38.65685 46,37 L46,3 C46,1.34315 44.65685,0 43,0 Z" id="Path" fill="#C6C6C6"></path>
+            <path d="M21,0 L13,0 C12.44771,0 12,0.44772 12,1 L12,39 C12,39.55228 12.44771,40 13,40 L21,40 C21.55228,40 22,39.55228 22,39 L22,1 C22,0.44772 21.55228,0 21,0 Z" id="Path" fill="#E6E6E6"></path>
+            <path d="M9,0 L1,0 C0.44772,0 0,0.44772 0,1 L0,39 C0,39.55228 0.44772,40 1,40 L9,40 C9.55229,40 10,39.55228 10,39 L10,1 C10,0.44772 9.55229,0 9,0 Z" id="Path" fill="#E6E6E6"></path>
+            <path d="M33,0 L25,0 C24.44772,0 24,0.44772 24,1 L24,39 C24,39.55228 24.44772,40 25,40 L33,40 C33.55228,40 34,39.55228 34,39 L34,1 C34,0.44772 33.55228,0 33,0 Z" id="Path" fill="#E6E6E6"></path>
+            <path d="M45,0 L37,0 C36.44772,0 36,0.44772 36,1 L36,39 C36,39.55228 36.44772,40 37,40 L45,40 C45.55228,40 46,39.55228 46,39 L46,1 C46,0.44772 45.55228,0 45,0 Z" id="Path" fill="#E6E6E6"></path>
+            <path d="M13,25 L9,25 C8.44771,25 8,24.55228 8,24 L8,1 C8,0.44772 8.44771,0 9,0 L13,0 C13.55229,0 14,0.44772 14,1 L14,24 C14,24.55228 13.55229,25 13,25 Z" id="Path" fill="#444444"></path>
+            <path d="M25,25 L21,25 C20.44772,25 20,24.55228 20,24 L20,1 C20,0.44772 20.44772,0 21,0 L25,0 C25.55228,0 26,0.44772 26,1 L26,24 C26,24.55228 25.55228,25 25,25 Z" id="Path" fill="#444444"></path>
+            <path d="M37,25 L33,25 C32.44772,25 32,24.55228 32,24 L32,1 C32,0.44772 32.44772,0 33,0 L37,0 C37.55228,0 38,0.44772 38,1 L38,24 C38,24.55228 37.55228,25 37,25 Z" id="Path" fill="#444444"></path>
+        </g>
+    </g>
+</svg>
