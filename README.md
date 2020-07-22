@@ -6,8 +6,8 @@ Personal website running on Gatsby, React, and Node.js.
 
 ## Installation
 
-1. `git clone https://github.com/tr1s/Tris.git`
-2. `cd Tris`
+1. `git clone https://github.com/tr1s/tris-portfolio-blog.git`
+2. `cd tris-portfolio-blog`
 3. `npm install`
 
 ## Developing
