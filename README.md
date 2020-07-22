@@ -1,52 +1,32 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-<p align="center">
-  <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby's blog starter now with 100% more MDX
-</h1>
+# tris.codes | [![Netlify Status](https://api.netlify.com/api/v1/badges/9d30f5c8-1e7e-4b5b-8c6b-8b5e9547b56d/deploy-status)](https://app.netlify.com/sites/triscodes/deploys)
 
-Kick off your project with this blog boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React, with support for an MDX blog.
+**REMEMBER TO CHANGE THIS NETLIFY BADGE ABOVE**
 
-_Have another more specific idea? You may want to check out this awesome collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
+Personal website running on Gatsby, React, and Node.js.
 
-What's MDX you ask? MDX let's you use JSX in your Markdown, making it even
-easier to write blog posts, document your React components, and much more. [Find
-out more about MDX](https://github.com/mdx-js/mdx), and [gatsby-mdx](https://github.com/ChristopherBiscardi/gatsby-mdx), the plugin that makes
-this blog possible!
+## Installation
 
-## 🚀 Quick start
+1. `git clone https://github.com/tr1s/Tris.git`
+2. `cd Tris`
+3. `npm install`
 
-1.  **Create a Gatsby site.**
+## Developing
 
-    Use the Gatsby CLI to create a new site, specifying the blog starter.
+1. `npm run develop`
 
-    ```sh
-    # create a new Gatsby site using the blog starter
-    npx gatsby new my-blog-starter https://github.com/hagnerd/gatsby-starter-blog-mdx
-    ```
+or use Netlify Dev for production builds
 
-1.  **Start developing.**
+1. `netlify dev` or `netlify dev --live`
 
-    Navigate into your new site’s directory and start it up.
+## Contributing
 
-    ```sh
-    cd my-blog-starter/
-    gatsby develop
-    ```
+If you see any typos or formatting errors in a post, or any other issue that needs to be addressed,
+please do not hesitate to open a pull request and fix it!
 
-1.  **Open the source code and start editing!**
+## Author
 
-    Your site is now running at `http://localhost:8000`!
+- [Tristan Michael Lawrence](https://tris.codes)
 
-    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
+## License
 
-    Open the `my-blog-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
-
-## 💫 Deploy
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-blog)
-
-<!-- AUTO-GENERATED-CONTENT:END -->
+This project is open source and available under the [MIT License](LICENSE).
