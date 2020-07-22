@@ -1,6 +1,6 @@
 # tris.codes | [![Netlify Status](https://api.netlify.com/api/v1/badges/9d30f5c8-1e7e-4b5b-8c6b-8b5e9547b56d/deploy-status)](https://app.netlify.com/sites/triscodes/deploys)
 
-**REMEMBER TO CHANGE THIS NETLIFY BADGE ABOVE**
+🚨🚨🚨 **REMEMBER TO CHANGE THIS NETLIFY BADGE ABOVE** 🚨🚨🚨
 
 Personal website running on Gatsby, React, and Node.js.
 
