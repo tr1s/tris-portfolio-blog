@@ -8,10 +8,13 @@ function Footer() {
       <div className="inner-wrapper">
         <p>......................................</p>
         <p>
-          {/* {new Date().getFullYear()}, Built w/ Love{' '}
-          <a href="https://www.gatsbyjs.org">??? 🌱🦋🌙</a> */}
+          {new Date().getFullYear()},{' '}
+          <a href="https://www.gatsbyjs.org">??? 🌱🦋🌙</a>
         </p>
       </div>
+
+      {/* BLM */}
+      <a className={footerStyles.blm} href="#" target="_blank" rel="noopener noreferrer">BLM</a>
     </footer>
   )
 }

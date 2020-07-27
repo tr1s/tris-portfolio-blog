@@ -6,4 +6,20 @@
     margin-bottom: 0.4rem;
     word-wrap: break-word;
   }
+  .blm {
+    padding: 0.5rem 1rem;
+    position: fixed;
+    bottom: 2rem;
+    left: 2rem;
+    color: $white;
+    background: $black;
+    border: 1px solid $black;
+    border-radius: 3px;
+    &:hover,
+    &:focus {
+      color: $black;
+      background: $white;
+      border: 1px solid $black;
+    }
+  }
 }

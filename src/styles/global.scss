@@ -10,8 +10,7 @@
 }
 
 *::selection {
-  background: lighten($pink, 9);
-  background: #3a74c4;
+  background: $color-accent;
   color: $white;
 }
 
@@ -33,8 +32,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background: $blue;
-  background: $pink;
+  background: $color-accent;
   border: 1px solid rgba(0, 0, 0, 0.6);
   border-right: none;
 }
@@ -140,7 +138,6 @@ li,
   letter-spacing: 0.101rem;
   // color: rgba(33, 43, 53, 1);
   color: $black;
-  // color: #465165;
 }
 
 a {
@@ -162,4 +159,14 @@ img {
 
 .dots {
   font-family: $font-mono;
+}
+
+.description {
+  padding-top: 4rem;
+  padding-bottom: 8rem;
+  font-family: $font-mono;
+  text-align: center;
+  width: 56ch;
+  max-width: 100%;
+  margin: 0 auto;
 }

@@ -9,9 +9,10 @@ const Projects = (props) => {
       <SEO title="Projects" />
       <div className="inner-wrapper">
         <h1>Projects</h1>
-        <div className={projectStyles.projects}>
-          List em' here.
-        </div>
+        <p className="description">
+        <em>“One can have no smaller or greater mastery than mastery of oneself.”
+        ― Leonardo da Vinci</em>
+        </p>
       </div>
     </Layout>
   )

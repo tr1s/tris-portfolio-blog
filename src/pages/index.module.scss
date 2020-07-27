@@ -1,8 +1,6 @@
-.intro {
-  text-align: center;
-}
-
 .tris {
+  font-family: $font-heading;
+  text-align: center;
   position: fixed;
   bottom: 0rem;
   left: 0;
@@ -12,4 +10,7 @@
 }
 .tris-info {
   text-align: center;
+  font-family: $font-mono;
+  padding-top: 4rem;
+  padding-bottom: 8rem;
 }

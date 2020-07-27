@@ -1,10 +1,8 @@
 import React from 'react'
-import { graphql, useStaticQuery } from 'gatsby'
+import { Link, graphql, useStaticQuery } from 'gatsby'
 
 import Layout from '../components/Layout/Layout'
 import SEO from '../components/seo'
-
-import rain from '../assets/audio/nightizm-ambient-rain.mp3';
 
 import '../styles/normalize.scss'
 import '../styles/typography.scss'
@@ -33,20 +31,16 @@ const Home = props => {
       />
 
       <div className='inner-wrapper'>
-        <h1 className={indexStyles.tris}>TRISTAN LAWRENCE</h1>
+        <h1>/</h1>
+        <span className={indexStyles.tris}>TRISTAN LAWRENCE</span>
 
         {/* INFO */}
         <div className={indexStyles.trisInfo}>
-          <p>Hi, I'm Tris.</p>
-          <p>I build websites and I make music.</p>
+          <p>- Hello World -</p>
+          <p>I <Link to="/projects">build websites</Link> and I <a href="https://nightizm.com" target="_blank" rel="noopener noreferrer">make music</a>.</p>
           <p>I work at <a href="https://junocollege.com" target="_blank" rel="noopener noreferrer">Juno College of Technology</a>, and I create at <a href="https://nightizm.com" target="_blank" rel="noopener noreferrer">Nightizm</a>.</p>
           <p>Let's talk about ways I can help solve your problems.</p>
         </div>
-
-        {/* MUSIC */}
-        <audio controls autoplay>
-          <source src={rain} type="audio/mpeg" />
-        </audio>
       </div>
     </Layout>
   )

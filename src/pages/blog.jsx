@@ -42,7 +42,9 @@ const Blog = (props) => {
       />
 
       <div className="inner-wrapper">
-        <p className={blogStyles.description}>Personal blog and thought garden of Tristan Lawrence. I plan to write about web development, self-improvement, technology, and music.</p>
+        <h1>Blog</h1>
+        {/* <p className="description">Personal blog and thought garden of Tristan Lawrence. I plan to write about web development, self-improvement, technology, and music.</p> */}
+        <p className="description"><em>"Life is bristling with thorns, and I know no other remedy than to cultivate one's own garden." — Voltaire</em></p>
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (

@@ -32,7 +32,7 @@
   }
   & > p {
     font-size: 1.6rem;
-    line-height: 1.6;
+    line-height: 1.666;
     letter-spacing: 0.101rem;
   }
   & > blockquote {
@@ -53,7 +53,7 @@
   }
   & > img {
     grid-column: 1 / 4;
-    border: 14px solid $blue;
+    border: 14px solid $color-main;
   }
   a {
     color: $color-accent;
@@ -67,6 +67,12 @@
   ul {
     padding-left: 4rem;
     list-style-type: disc;
+  }
+  code {
+    background: $color-highlight;
+    padding: 0.2rem 0.4rem;
+    border: 1px solid darken($color-highlight, 40);
+    border-radius: 4px;
   }
   pre {
     padding: 1.5rem;

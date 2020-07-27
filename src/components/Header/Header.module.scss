@@ -1,5 +1,6 @@
 .nav {
   padding: 4rem;
+  padding-bottom: 2rem;
   display: flex;
   font-family: $font-mono;
   flex-direction: column;
@@ -14,4 +15,25 @@
   a:not(:last-child) {
     margin-right: 2rem;
   }
+}
+
+.player {
+  border: 1px solid $black;
+  border-radius: 4px;
+  margin-bottom: 4rem;
+  .playContainer {
+    width: 5rem;
+    height: 5rem;
+    border-right: 1px solid $black;
+    position: relative;
+    img {
+      width: 2.5rem;
+      @include centered;
+    }
+  }
+}
+audio {
+  width: 100%;
+  border-radius: 3px !important;
+  display: none;
 }
