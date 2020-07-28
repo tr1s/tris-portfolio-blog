@@ -2,69 +2,76 @@
 ========================================================================== */
 
 @font-face {
-  font-family: 'Hind Regular';
+  font-family: "Hind Regular";
   font-style: normal;
   font-weight: 400;
-  src: local('Hind Regular'), local('Hind-Regular'),
-    url('../assets/fonts/hind-v9-latin-regular.woff2') format('woff2'),
-    url('../assets/fonts/hind-v9-latin-regular.woff') format('woff');
+  src: local("Hind Regular"), local("Hind-Regular"),
+    url("../assets/fonts/hind-v9-latin-regular.woff2") format("woff2"),
+    url("../assets/fonts/hind-v9-latin-regular.woff") format("woff");
 }
 
 @font-face {
-  font-family: 'Hind SemiBold';
+  font-family: "Hind SemiBold";
   font-style: normal;
   font-weight: 600;
-  src: local('Hind SemiBold'), local('Hind-SemiBold'),
-    url('../assets/fonts/hind-v9-latin-600.woff2') format('woff2'),
-    url('../assets/fonts/hind-v9-latin-600.woff') format('woff');
+  src: local("Hind SemiBold"), local("Hind-SemiBold"),
+    url("../assets/fonts/hind-v9-latin-600.woff2") format("woff2"),
+    url("../assets/fonts/hind-v9-latin-600.woff") format("woff");
 }
 /* hind-700 - latin */
 @font-face {
-  font-family: 'Hind Bold';
+  font-family: "Hind Bold";
   font-style: normal;
   font-weight: 700;
-  src: local('Hind Bold'), local('Hind-Bold'),
-    url('../assets/fonts/hind-v10-latin-700.woff2') format('woff2'),
-    url('../assets/fonts/hind-v10-latin-700.woff') format('woff');
+  src: local("Hind Bold"), local("Hind-Bold"),
+    url("../assets/fonts/hind-v10-latin-700.woff2") format("woff2"),
+    url("../assets/fonts/hind-v10-latin-700.woff") format("woff");
 }
 
 @font-face {
-  font-family: 'Miller Banner Light';
+  font-family: "Miller Banner Light";
   font-style: normal;
   font-weight: 600;
-  src: local('Miller Banner Light'), local('MillerBannerLight'),
-    url('../assets/fonts/MillerBannerLight.woff') format('woff');
+  src: local("Miller Banner Light"), local("MillerBannerLight"),
+    url("../assets/fonts/MillerBannerLight.woff") format("woff");
 }
 @font-face {
-  font-family: 'Miller Banner Bold';
+  font-family: "Miller Banner Bold";
   font-style: normal;
   font-weight: 600;
-  src: local('Miller Banner Bold'), local('MillerBannerBold'),
-    url('../assets/fonts/MillerBannerBold.woff') format('woff');
+  src: local("Miller Banner Bold"), local("MillerBannerBold"),
+    url("../assets/fonts/MillerBannerBold.woff") format("woff");
 }
 @font-face {
-  font-family: 'Miller Banner Black';
+  font-family: "Miller Banner Black";
   font-style: normal;
   font-weight: 600;
-  src: local('Miller Banner Black'), local('MillerBannerBlack'),
-    url('../assets/fonts/MillerBannerBlack.woff') format('woff');
+  src: local("Miller Banner Black"), local("MillerBannerBlack"),
+    url("../assets/fonts/MillerBannerBlack.woff") format("woff");
 }
 @font-face {
-  font-family: 'Miller Banner Black Italic';
+  font-family: "Miller Banner Black Italic";
   font-style: normal;
   font-weight: 600;
-  src: local('Miller Banner Black Italic'), local('MillerBannerBlackItalic'),
-    url('../assets/fonts/MillerBannerBlackItalic.woff') format('woff');
+  src: local("Miller Banner Black Italic"), local("MillerBannerBlackItalic"),
+    url("../assets/fonts/MillerBannerBlackItalic.woff") format("woff");
 }
 
 @font-face {
-  font-family: 'Magda';
+  font-family: "Magda";
   font-style: normal;
   font-weight: 600;
-  src: local('MagdaCleanMono Regular'), local('MagdaCleanMono-Regular'),
-    url('../assets/fonts/MagdaCleanMono-Regular.woff') format('woff'),
-    url('../assets/fonts/MagdaCleanMono-Regular.otf') format('opentype'),
-    url('../assets/fonts/MagdaCleanMono-Regular.ttf') format('truetype');
+  src: local("MagdaCleanMono Regular"), local("MagdaCleanMono-Regular"),
+    url("../assets/fonts/MagdaCleanMono-Regular.woff") format("woff"),
+    url("../assets/fonts/MagdaCleanMono-Regular.otf") format("opentype"),
+    url("../assets/fonts/MagdaCleanMono-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Magda Bold";
+  font-style: normal;
+  font-weight: 600;
+  src: local("MagdaCleanMono Bold"), local("MagdaCleanMono-Bold"),
+    url("../assets/fonts/MagdaCleanMono-Bold.ttf") format("truetype");
 }
 
 html {

@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 2rem;
+  // background: transparent;
+  button {
+    width: 4rem;
+    height: 4rem;
+    margin: 0 auto;
+    position: relative;
+  }
+  img {
+    width: 2rem;
+    @include centered;
+  }
+  #waveform {
+    width: 100%;
+  }
+}

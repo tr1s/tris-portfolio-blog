@@ -37,7 +37,10 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-helmet-async": "^1.0.6",
-    "react-live": "^2.2.2"
+    "react-live": "^2.2.2",
+    "react-player": "^2.6.0",
+    "use-sound": "^1.0.2",
+    "wavesurfer.js": "^4.0.1"
   },
   "devDependencies": {
     "prettier": "^2.0.5",

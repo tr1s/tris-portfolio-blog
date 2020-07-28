@@ -20,6 +20,7 @@ html {
 
 body {
   background: #fcfcfc;
+  // background: #ebf5fe;
 }
 
 body::-webkit-scrollbar {
@@ -146,9 +147,9 @@ a {
   color: $grey;
   &:hover,
   &:focus {
-    color: $black;
-    text-decoration: underline;
-    text-decoration-color: $color-accent;
+    color: $color-accent;
+    // text-decoration: underline;
+    // text-decoration-color: $color-accent;
   }
 }
 

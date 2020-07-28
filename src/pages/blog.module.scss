@@ -6,20 +6,23 @@
   a.post-link {
     display: flex;
     justify-content: space-between;
-    padding: 1.4rem 1.6rem;
-    padding-bottom: 1.2rem;
-    border: 1px solid lightgray;
+    padding: 1rem 1.6rem;
+    padding-bottom: 0.8rem;
+    border: 6px solid #ebf5fe;
     border-radius: 0.4rem;
     font-family: $font-body-bold;
-    letter-spacing: 0rem;
     font-size: 1.9rem;
+    letter-spacing: 0rem;
     color: $grey;
     background: darken($color: #fff, $amount: 4);
-    &:hover {
-      border: 1px solid $color-main;
+    transition: 0.2s background ease-out;
+    &:hover,
+    &:focus {
+      border: 6px solid darken(#ebf5fe, 2);
       color: $black;
-      background: #dbffdb;
+      background: #ebf5fe;
       text-decoration: none;
+      transition: 0.2s background ease-out;
       @include respond-to("mobile-large") {
         border: none;
       }

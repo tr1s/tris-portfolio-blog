@@ -13,4 +13,8 @@
   font-family: $font-mono;
   padding-top: 4rem;
   padding-bottom: 8rem;
+  a {
+    font-family: $font-mono-bold;
+    color: $black;
+  }
 }
