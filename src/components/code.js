@@ -2,7 +2,7 @@ import React from 'react'
 import Highlight, { defaultProps } from 'prism-react-renderer'
 import { LiveProvider, LiveEditor, LiveError, LivePreview } from 'react-live'
 
-import dracula from 'prism-react-renderer/themes/github/';
+import dracula from 'prism-react-renderer/themes/ultramin/';
 
 export const Code = ({ codeString, language, ...props }) => {
   if (props['react-live']) {
@@ -10,8 +10,8 @@ export const Code = ({ codeString, language, ...props }) => {
       <LiveProvider code={codeString} noInline={true}>
         <LiveEditor
           theme={dracula}
-          padding={`15px`}
-          style={{ fontSize: "16px", lineHeight: "1.6", backgroundColor: "#f6f8fa" }}
+          padding={`2rem`}
+          style={{ fontSize: "2.1rem", lineHeight: "1.6", backgroundColor: "#f6f8fa" }}
         />
         <LiveError />
         <LivePreview />

@@ -14,7 +14,7 @@ function Footer() {
       </div>
 
       {/* BLM */}
-      <a className={footerStyles.blm} href="https://linktr.ee/blacklivesmatter" target="_blank" rel="noopener noreferrer">BLM</a>
+      <a className={footerStyles.blm} href="https://linktr.ee/blacklivesmatter" target="_blank" rel="noopener noreferrer">BLACK LIVES MATTER</a>
     </footer>
   )
 }

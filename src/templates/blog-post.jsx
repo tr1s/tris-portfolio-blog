@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component } from 'react'
 import { Link, graphql } from 'gatsby'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
 
@@ -9,7 +9,7 @@ import reading from '../assets/images/reading.svg';
 
 import BlogPostStyles from './blog-post.module.scss';
 
-class BlogPostTemplate extends React.Component {
+class BlogPostTemplate extends Component {
   render() {
     const post = this.props.data.mdx
     const siteTitle = this.props.data.site.siteMetadata.title
@@ -33,25 +33,25 @@ class BlogPostTemplate extends React.Component {
           {/* ARTICLE */}
           <article className={BlogPostStyles.post}>
             <MDXRenderer>{post.body}</MDXRenderer>
-          </article>
 
-          {/* NAVIGATE */}
-          <ul className={BlogPostStyles.navigate}>
-            <li>
-              {previous && (
-                <Link to={previous.fields.slug} rel="prev">
-                  ← {previous.frontmatter.title}
-                </Link>
-              )}
-            </li>
-            <li>
-              {next && (
-                <Link to={next.fields.slug} rel="next">
-                  {next.frontmatter.title} →
-                </Link>
-              )}
-            </li>
-          </ul>
+            {/* NAVIGATE */}
+            <ul className={BlogPostStyles.navigate}>
+              <li>
+                {previous && (
+                  <Link to={previous.fields.slug} rel="prev">
+                    ← {previous.frontmatter.title}
+                  </Link>
+                )}
+              </li>
+              <li>
+                {next && (
+                  <Link to={next.fields.slug} rel="next">
+                    {next.frontmatter.title} →
+                  </Link>
+                )}
+              </li>
+            </ul>
+          </article>
         </section>
       </Layout>
     )

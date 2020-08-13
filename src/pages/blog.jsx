@@ -42,22 +42,25 @@ const Blog = (props) => {
       />
 
       <div className="inner-wrapper">
-        <h1>Blog</h1>
-        {/* <p className="description">Personal blog and thought garden of Tristan Lawrence. I plan to write about web development, self-improvement, technology, and music.</p> */}
-        <p className="description"><em>"Life is bristling with thorns, and I know no other remedy than to cultivate one's own garden." — Voltaire</em></p>
-        {posts.map(({ node }) => {
-          const title = node.frontmatter.title || node.fields.slug
-          return (
-            <ul className={blogStyles.post} key={node.fields.slug}>
-              <li>
-                <Link className={blogStyles.postLink} to={node.fields.slug}>
-                  {title}
-                  <small>{node.frontmatter.date}</small>
-                </Link>
-              </li>
-            </ul>
-          )
-        })}
+        <section className={blogStyles.postsContainer}>
+          <p className="description"><em>"Life is bristling with thorns, and I know no other remedy than to cultivate one's own garden." <span>— Voltaire</span></em></p>
+          <div>
+            {posts.map(({ node }) => {
+              const title = node.frontmatter.title || node.fields.slug;
+
+              return (
+                <ul className={blogStyles.post} key={node.fields.slug}>
+                  <li>
+                    <Link className={blogStyles.postLink} to={node.fields.slug}>
+                      {title}
+                      <small>{node.frontmatter.date}</small>
+                    </Link>
+                  </li>
+                </ul>
+              )
+            })}
+          </div>
+        </section>
       </div>
     </Layout>
   )

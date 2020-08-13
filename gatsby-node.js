@@ -39,17 +39,17 @@ exports.createPages = ({ graphql, actions }) => {
       const previous = index === posts.length - 1 ? null : posts[index + 1].node
       const next = index === 0 ? null : posts[index - 1].node
 
-      // const newSlug = post.node.frontmatter.title
-      // .toLowerCase()
-      // .replace(/[^\w ]+/g, '')
-      // .replace(/\s+/g, '-');
+      const newSlug = post.node.frontmatter.title
+        .toLowerCase()
+        .replace(/[^\w ]+/g, '')
+        .replace(/\s+/g, '-');
 
       createPage({
         path: post.node.fields.slug,
         component: blogPost,
         context: {
           slug: post.node.fields.slug,
-          // newSlug,
+          newSlug,
           previous,
           next,
         },

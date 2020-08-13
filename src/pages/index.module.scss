@@ -1,4 +1,7 @@
-.tris {
+/* Index styles
+========================================================================== */
+
+.title {
   font-family: $font-heading;
   text-align: center;
   position: fixed;
@@ -6,15 +9,16 @@
   left: 0;
   line-height: 0.8;
   font-size: 17vw;
-  // color: lighten($grey, 50);
+  z-index: -1;
+  color: #e71c47;
 }
-.tris-info {
-  text-align: center;
-  font-family: $font-mono;
-  padding-top: 4rem;
-  padding-bottom: 8rem;
-  a {
-    font-family: $font-mono-bold;
-    color: $black;
+.tris {
+  img {
+    width: calc(666px - 69px);
+    max-width: 100%;
+    margin: 0 auto;
+    margin-top: -3rem;
+    border: 6px solid $black;
+    opacity: 0.9;
   }
 }

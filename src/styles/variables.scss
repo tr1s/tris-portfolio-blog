@@ -9,6 +9,8 @@ $font-body: "Hind Regular", -apple-system, sans-serif;
 $font-mono: "Magda", monospace;
 $font-mono-bold: "Magda Bold", monospace;
 
+$border-radius: 4px;
+
 // colors
 $white: #fff;
 $white-soft: #f9f9f9;
@@ -18,8 +20,10 @@ $black: rgba(33, 43, 53, 1);
 $black-soft: rgba(33, 43, 53, 1);
 $grey: #495057;
 $grey: darken(#868e96, 14);
+$light-blue: #ebf5fe;
 
-$color-main: #3a50fd;
-$color-accent: #f754b3;
-$color-highlight: lemonchiffon;
-$color-success: #dbffdb;
+$color-main: #81c1fc;
+$color-main: darken(#81c1fc, 26);
+$color-secondary: #c95555;
+$color-accent: #83cf8f;
+$color-highlight: #81c1fc;

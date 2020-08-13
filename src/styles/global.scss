@@ -1,5 +1,6 @@
 /* Global styles
 ========================================================================== */
+
 *,
 *:before,
 *:after {
@@ -10,8 +11,7 @@
 }
 
 *::selection {
-  background: $color-accent;
-  color: $white;
+  background: lighten($color-highlight, 21);
 }
 
 html {
@@ -20,7 +20,12 @@ html {
 
 body {
   background: #fcfcfc;
-  // background: #ebf5fe;
+  background: lighten(#f7e4e8, 4);
+  background: #f1ebe6;
+  background: #f1f3f5;
+  margin-top: 1rem;
+  // border: 1.6rem solid $white;
+  border-bottom: none;
 }
 
 body::-webkit-scrollbar {
@@ -33,7 +38,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background: $color-accent;
+  background: $color-main;
   border: 1px solid rgba(0, 0, 0, 0.6);
   border-right: none;
 }
@@ -50,6 +55,7 @@ body::-webkit-scrollbar-thumb {
   top: 0;
   max-width: 1400px;
   margin: 0 auto;
+  border-radius: $border-radius;
   @include respond-to("desktop-15") {
     padding: 0 5%;
   }
@@ -57,7 +63,7 @@ body::-webkit-scrollbar-thumb {
     padding: 0 5%;
   }
   @include respond-to("mobile-large") {
-    padding: 0 4rem;
+    padding: 0 5%;
   }
   @include respond-to("mobile-small") {
     padding: 0 2rem;
@@ -88,7 +94,6 @@ h1 {
   font-size: 5.1rem;
   text-align: center;
   color: $black;
-  // -webkit-text-stroke: 1px black;
   @include respond-to("mobile-large") {
     font-size: 3.1rem;
   }
@@ -137,7 +142,6 @@ li,
   font-size: 1.6rem;
   line-height: 2.4rem;
   letter-spacing: 0.101rem;
-  // color: rgba(33, 43, 53, 1);
   color: $black;
 }
 
@@ -148,8 +152,6 @@ a {
   &:hover,
   &:focus {
     color: $color-accent;
-    // text-decoration: underline;
-    // text-decoration-color: $color-accent;
   }
 }
 
@@ -163,11 +165,15 @@ img {
 }
 
 .description {
-  padding-top: 4rem;
-  padding-bottom: 8rem;
-  font-family: $font-mono;
+  padding-top: 8rem;
+  padding-bottom: 6rem;
+  font-family: $font-body;
   text-align: center;
   width: 56ch;
   max-width: 100%;
   margin: 0 auto;
+  line-height: 1.6;
+  span {
+    font-family: $font-mono-bold;
+  }
 }
