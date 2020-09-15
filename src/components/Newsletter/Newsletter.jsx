@@ -12,9 +12,16 @@ const Newsletter = () => {
             <p>Sign up to get the latest about my learning journey via blog posts.</p>
           </div>
 
-          <form action="" className={newsletterStyles.form}>
+          <form
+            className={newsletterStyles.form}
+            action="https://app.convertkit.com/forms/1669991/subscriptions"
+            method="post"
+          >
+            <label htmlFor="name">
+              <input type="text" id="name" name="fields[first_name]" placeholder="Your first name..." aria-label="Your first name" />
+            </label>
             <label htmlFor="email">
-              <input type="email" id="email" placeholder="Enter your email..."/>
+              <input type="email" name="email_address" id="email" placeholder="Enter your email..."/>
             </label>
             <button type="submit">Submit</button>
         </form>

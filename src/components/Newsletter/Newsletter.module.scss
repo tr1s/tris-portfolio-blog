@@ -55,10 +55,9 @@
       box-shadow: 0 2px 0 $black;
     }
     &:focus {
+      box-shadow: 0 2px 0 $color-main;
     }
     &:active {
-      background: lighten($color-main, 6);
-      background: lighten($color-highlight, 21);
       box-shadow: 0 2px 0 $color-main;
     }
   }
