@@ -9,8 +9,8 @@ module.exports = {
     },
   },
   plugins: [
-    `gatsby-plugin-catch-links`,
     `gatsby-plugin-react-helmet-async`,
+    `gatsby-plugin-catch-links`,
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-robots-txt`,
     `gatsby-transformer-sharp`,
