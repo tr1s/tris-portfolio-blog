@@ -1,0 +1,86 @@
+/* Project styles
+========================================================================== */
+
+.title {
+  padding-left: 6rem;
+  margin-bottom: 4rem;
+  width: 590px;
+  max-width: 100%;
+  font-size: 2.1rem;
+  line-height: 1.6;
+  font-family: $font-heading-regular;
+}
+
+.projects {
+  margin: 0 auto;
+
+  .projects-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 6rem;
+  }
+  .project-link {
+    border-radius: $border-radius;
+    background: $white;
+    align-self: stretch;
+    border: 1px solid rgba(0, 0, 0, 0.14);
+    border-top: 4px solid $grey;
+    border-radius: $border-radius;
+    flex-basis: 469px;
+    width: calc(469px - 2rem);
+    margin: 2rem;
+    // box-shadow: 0 0px 0px #ebecee;
+    transition: 0.2s all linear;
+    position: relative;
+    top: 0;
+    @include respond-to("tablet") {
+      margin: 0;
+      margin-bottom: 4rem;
+    }
+    &:hover,
+    &:focus {
+      border: 1px solid darken(#f1f3f5, 21);
+      border-top: 4px solid $black;
+      background: lighten($color-highlight, 23);
+      // box-shadow: 0 8px 4px darken(#ebecee, 1);
+      transition: 0.2s all linear;
+      top: -0.3rem;
+    }
+    &:hover .info,
+    &:focus .info {
+      border-top: 1px solid darken(#f1f3f5, 21);
+      background: lighten($color-highlight, 23);
+      transition: 0.2s all linear;
+    }
+    &:hover .info h2,
+    &:focus .info h2 {
+      color: $color-main;
+      transition: 0.4s all linear;
+    }
+    &:active .info h2 {
+      color: $color-secondary;
+      transition: 0.4s all linear;
+    }
+  }
+  .project {
+    display: flex;
+    flex-direction: column-reverse;
+    .info {
+      background: $white;
+      border-top: 1px solid rgba(0, 0, 0, 0.14);
+      padding: 3rem;
+      border-bottom-left-radius: $border-radius;
+      border-bottom-right-radius: $border-radius;
+      transition: 0.2s all linear;
+    }
+    h2 {
+      color: $grey;
+      font-size: 2.56rem;
+      margin-bottom: 1rem;
+    }
+    p {
+      margin-bottom: 0.5rem;
+    }
+  }
+}

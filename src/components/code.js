@@ -11,7 +11,7 @@ export const Code = ({ codeString, language, ...props }) => {
         <LiveEditor
           theme={dracula}
           padding={`2rem`}
-          style={{ fontSize: "2.1rem", lineHeight: "1.6", backgroundColor: "#f6f8fa" }}
+          style={{ fontSize: "1.9rem", lineHeight: "1.6", backgroundColor: "#f6f8fa" }}
         />
         <LiveError />
         <LivePreview />

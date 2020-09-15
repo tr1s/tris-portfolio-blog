@@ -10,9 +10,10 @@ const Layout = (props) => {
   <div>
     <Header />
     {children}
-    {location.pathname !== "/" && (
+    {/* {location.pathname !== "/" && (
       <Footer />
-    )}
+    )} */}
+    <Footer />
   </div>
   )
 }

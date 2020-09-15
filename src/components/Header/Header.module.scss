@@ -3,36 +3,56 @@
 
 .active {
   color: $black;
+  color: $color-accent;
   font-family: $font-mono-bold;
 }
 
 header {
   background: $white;
   position: relative;
+  border-bottom: 2px solid darken(#f1f3f5, 2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1; // this stops the projects from overlapping
+  &:hover {
+    border-bottom: 2px solid darken(#f1f3f5, 6);
+  }
   .title {
-    @include centered;
+    h1 {
+      color: $color-main;
+    }
     &:active span {
-      color: $color-accent;
+      color: $color-secondary;
     }
     span {
-      color: $color-main;
+      color: $black;
     }
   }
   .title h1 {
     &:hover,
     &:focus {
-      color: $color-secondary;
+      color: $color-main;
     }
   }
 }
 
 .nav {
-  padding: 6rem 2rem;
+  padding: 1rem 1.7rem;
   font-family: $font-mono;
-  border-left: 1px solid #f1f3f5;
-  border-right: 1px solid #f1f3f5;
+  border: 2px solid darken(#f1f3f5, 2);
+  border-top: none;
+  border-bottom: none;
   display: flex;
+  flex-direction: row-reverse;
   justify-content: space-between;
+  align-items: center;
+  &:hover {
+    border: 2px solid darken(#f1f3f5, 6);
+    border-top: none;
+    border-bottom: none;
+  }
   @include respond-to("mobile-large") {
     padding: 6rem;
     padding-bottom: 4rem;
@@ -42,11 +62,19 @@ header {
     flex-direction: column;
   }
   .social-links {
-    text-align: right;
-    align-self: center;
-  }
-  .social-links a:not(:last-child) {
-    margin-right: 1.5rem;
+    display: flex;
+    justify-content: center;
+    a {
+      border-radius: $border-radius;
+      padding: 0.8rem;
+      &:hover,
+      &:focus {
+        background: lighten($color-highlight, 21);
+      }
+    }
+    img {
+      width: 1.9rem;
+    }
   }
   a:hover,
   a:focus {

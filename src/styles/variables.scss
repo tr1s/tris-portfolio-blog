@@ -2,6 +2,7 @@
 ========================================================================== */
 
 $font-heading: "Miller Banner Light", serif;
+$font-heading-regular: "Miller Banner Book", serif;
 $font-heading-thick: "Miller Banner Black", serif;
 $font-body-medium: "Hind SemiBold", -apple-system, sans-serif;
 $font-body-bold: "Hind Bold", -apple-system, sans-serif;
@@ -16,14 +17,29 @@ $white: #fff;
 $white-soft: #f9f9f9;
 $true-black: #000000;
 $black: rgba(0, 14, 27, 1);
+$black: #021627;
 $black: rgba(33, 43, 53, 1);
 $black-soft: rgba(33, 43, 53, 1);
 $grey: #495057;
 $grey: darken(#868e96, 14);
 $light-blue: #ebf5fe;
+$silver: #888888;
+$blue: #5555c9;
+$green: #3f7b62;
+$purple: #7247c0;
+$pink: #fd758e;
 
-$color-main: #81c1fc;
-$color-main: darken(#81c1fc, 26);
-$color-secondary: #c95555;
-$color-accent: #83cf8f;
+/* Main Colours _____________________________*/
+$color-main: #021627;
+$color-main: #3f7b62;
+$color-main: #0476df;
+$color-secondary: #f29189;
+$color-secondary: #e34534;
+$color-accent: #e2f30c;
+$color-accent: #e40779;
+$color-accent: #e34534;
+$color-accent: #0476df;
 $color-highlight: #81c1fc;
+
+/* Main Changes _____________________________*/
+$color-link: $color-main;

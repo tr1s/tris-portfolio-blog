@@ -1,0 +1,85 @@
+.newsletter {
+  border-top: 2px solid darken(#f1f3f5, 2);
+  border-bottom: 2px solid darken(#f1f3f5, 2);
+  &:hover {
+    border-top: 2px solid darken(#f1f3f5, 6);
+    border-bottom: 2px solid darken(#f1f3f5, 6);
+  }
+  .newsletter-container {
+    border-left: 2px solid darken(#f1f3f5, 2);
+    border-right: 2px solid darken(#f1f3f5, 2);
+    padding: 6rem 6rem 4rem 6rem;
+    display: flex;
+    justify-content: center;
+    &:hover {
+      border-left: 2px solid darken(#f1f3f5, 6);
+      border-right: 2px solid darken(#f1f3f5, 6);
+    }
+  }
+  .newsletter-container .info {
+    width: 400px;
+    max-width: 100%;
+    margin-right: 4rem;
+  }
+  .title {
+    font-size: 5.4rem;
+    font-family: $font-heading;
+    line-height: 1.1;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  padding: 4rem 0;
+  label {
+    position: relative;
+  }
+  input {
+    width: 400px;
+    padding: 1.2rem 1.8rem;
+    padding-top: 1.6rem;
+    margin-right: 1rem;
+    outline: none;
+    border-radius: $border-radius;
+    border: none;
+    background: lighten($color-highlight, 23);
+    box-shadow: 0 2px 0 $grey;
+    &::placeholder {
+      color: $grey;
+    }
+    &:hover {
+      box-shadow: 0 2px 0 $black;
+    }
+    &:focus {
+    }
+    &:active {
+      background: lighten($color-main, 6);
+      background: lighten($color-highlight, 21);
+      box-shadow: 0 2px 0 $color-main;
+    }
+  }
+  button {
+    font-family: $font-body-medium;
+    padding: 0 1.8rem;
+    border: none;
+    border-radius: $border-radius;
+    background: darken(#f1f3f5, 2);
+    box-shadow: 0 2px 0px $grey;
+    cursor: pointer;
+    &:hover,
+    &:focus {
+      background: darken(#f1f3f5, 6);
+      outline: none;
+    }
+    &:active {
+      border-bottom: 2px solid darken($color-main, 6);
+      box-shadow: 0 0 0 darken($color-main, 6);
+      background: darken(#f1f3f5, 6);
+      outline: none;
+    }
+  }
+}

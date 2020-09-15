@@ -19,17 +19,14 @@ html {
 }
 
 body {
-  background: #fcfcfc;
-  background: lighten(#f7e4e8, 4);
-  background: #f1ebe6;
-  background: #f1f3f5;
-  margin-top: 1rem;
-  // border: 1.6rem solid $white;
+  background: #fff;
+  // background: #fcfcfc;
+  // background: #f1f3f5;
   border-bottom: none;
 }
 
 body::-webkit-scrollbar {
-  width: 0.7rem;
+  width: 1rem;
 }
 
 body::-webkit-scrollbar-track {
@@ -135,6 +132,7 @@ ol {
 
 p,
 input,
+button,
 textarea,
 li,
 ::placeholder {
@@ -164,9 +162,12 @@ img {
   font-family: $font-mono;
 }
 
-.description {
-  padding-top: 8rem;
-  padding-bottom: 6rem;
+.quote {
+  padding: 14rem 0;
+  padding-bottom: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-family: $font-body;
   text-align: center;
   width: 56ch;
@@ -174,6 +175,33 @@ img {
   margin: 0 auto;
   line-height: 1.6;
   span {
+    color: $black;
     font-family: $font-mono-bold;
+  }
+  img {
+    width: 3rem;
+    margin-top: 2rem;
+    animation: 26s linear infinite rotate;
+    display: none;
+  }
+}
+
+.page-info {
+  padding-left: 6rem;
+  margin-bottom: 4rem;
+  width: 590px;
+  width: 50%;
+  h2 {
+    width: 560px;
+    max-width: 100%;
+    font-size: 5.4rem;
+    font-family: $font-heading;
+    line-height: 1.1;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 1rem;
+    span {
+      color: $color-link;
+    }
   }
 }

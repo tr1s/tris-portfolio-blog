@@ -3,9 +3,10 @@ import { Link, graphql } from 'gatsby'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
 
 import Layout from '../components/Layout/Layout'
-import SEO from '../components/seo'
+import Head from '../components/head'
+import Newsletter from '../components/Newsletter/Newsletter';
 
-import reading from '../assets/images/reading.svg';
+import reading from '../assets/images/blog/reading.svg';
 
 import BlogPostStyles from './blog-post.module.scss';
 
@@ -18,7 +19,9 @@ class BlogPostTemplate extends Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-      <SEO title={post.frontmatter.title} description={post.excerpt} />
+        <Head title={post.frontmatter.title} description={post.excerpt} />
+
+        <p className="quote"><em>"A post explaining the current article "New Beginnings in a Time of Uncertainty" <span>— Tristan</span></em></p>
 
         <section className={`inner-wrapper ${BlogPostStyles.postWrapper}`}>
 
@@ -53,6 +56,8 @@ class BlogPostTemplate extends Component {
             </ul>
           </article>
         </section>
+
+        <Newsletter />
       </Layout>
     )
   }
