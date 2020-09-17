@@ -46,7 +46,7 @@ const Home = props => {
           <div className={indexStyles.info}>
             <h1 className={indexStyles.headline}>Building the modern web with focus on <span>performance</span>, <span>aesthetic</span>, and <span>simplicity</span>.</h1>
             <p className={indexStyles.description}>
-              I’m just a boy who loves to create — I make <span>progressive web applications</span>, <span>dynamic websites</span>, <span>e-commerce websites</span>, and <span>music</span>. <a href="mailto:https://trislaw@gmail.com">Email me</a> and let’s talk about ways I can help solve your problems.
+              I’m just a boy who loves to create — I make <span>progressive web applications</span>, <span>dynamic websites</span>, <span>e-commerce websites</span>, and <span>music</span>. <a href="mailto:trislaw@gmail.com">Email me</a> and let’s talk about ways I can help solve your problems.
             </p>
           </div>
 

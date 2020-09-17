@@ -51,7 +51,7 @@ const Blog = (props) => {
             </p>
 
             <div className="page-info">
-              <h2 className={blogStyles.title}>Blog</h2>
+              <h2 className={blogStyles.title}>Blog / Digital Garden</h2>
               <p>Expressing myself and teaching others through words:</p>
             </div>
 
