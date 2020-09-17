@@ -140,6 +140,14 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-mailgo`,
+      options: {
+        mailgoConfig: {
+          dark: true,
+        },
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Tristan Lawrence`,
