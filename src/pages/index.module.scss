@@ -37,24 +37,28 @@
         &:hover,
         &:focus {
           color: $purple;
+          cursor: url("../assets/images/home/window-pwa.svg"), auto;
         }
       }
       span:nth-of-type(2) {
         &:hover,
         &:focus {
           color: $pink;
+          cursor: url("../assets/images/home/window-design.svg"), auto;
         }
       }
       span:nth-of-type(3) {
         &:hover,
         &:focus {
           color: $green;
+          cursor: url("../assets/images/home/shopify.svg"), auto;
         }
       }
       span:nth-of-type(4) {
         &:hover,
         &:focus {
           color: $color-main;
+          cursor: url("../assets/images/home/piano.svg"), auto;
         }
       }
       a {

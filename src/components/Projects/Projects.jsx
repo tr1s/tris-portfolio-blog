@@ -25,8 +25,8 @@ const Projects = () => {
       </div>
 
       <div className="page-info">
-        <h2>Featured work</h2>
-        <p>While building projects I focus on user experience, performance, accessibility, simplicity, and aesthetic. I bridge the gap as a meticulous developer with an adoration for design.</p>
+        <h2>Featured www.ork</h2>
+        <p>Focusing on user experience, performance, accessibility, simplicity, and aesthetic — I bridge the gap as a meticulous developer with an adoration for design. Have a look at some of my latest works:</p>
       </div>
 
       <p className={projectStyles.title}></p>

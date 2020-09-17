@@ -18,10 +18,10 @@ const Newsletter = () => {
             method="post"
           >
             <label htmlFor="name">
-              <input type="text" id="name" name="fields[first_name]" placeholder="Your first name..." aria-label="Your first name" />
+              <input type="text" id="name" name="fields[first_name]" placeholder="Enter your first name:" aria-label="Your first name" />
             </label>
             <label htmlFor="email">
-              <input type="email" name="email_address" id="email" placeholder="Enter your email..."/>
+              <input type="email" name="email_address" id="email" placeholder="Enter your email:"/>
             </label>
             <button type="submit">Submit</button>
         </form>
