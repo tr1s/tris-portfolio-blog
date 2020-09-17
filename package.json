@@ -11,13 +11,13 @@
     "@mdx-js/mdx": "^1.6.17",
     "@mdx-js/react": "^1.6.17",
     "@mdx-js/tag": "^0.20.3",
-    "gatsby": "^2.24.60",
-    "gatsby-image": "^2.4.18",
+    "gatsby": "^2.24.62",
+    "gatsby-image": "^2.4.19",
     "gatsby-plugin-catch-links": "^2.3.12",
     "gatsby-plugin-feed": "^2.5.12",
     "gatsby-plugin-google-analytics": "^2.3.14",
     "gatsby-plugin-mailgo": "^0.9.18",
-    "gatsby-plugin-manifest": "^2.4.29",
+    "gatsby-plugin-manifest": "^2.4.30",
     "gatsby-plugin-mdx": "^1.2.40",
     "gatsby-plugin-offline": "^3.2.28",
     "gatsby-plugin-react-helmet-async": "^1.1.0",
@@ -44,7 +44,7 @@
     "wavesurfer.js": "^4.0.1"
   },
   "devDependencies": {
-    "prettier": "^2.1.1",
+    "prettier": "^2.1.2",
     "standard": "^14.3.4"
   },
   "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",

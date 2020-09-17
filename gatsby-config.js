@@ -16,6 +16,14 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
+      resolve: `gatsby-plugin-mailgo`,
+      options: {
+        mailgoConfig: {
+          dark: true,
+        },
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: 'src',
@@ -137,14 +145,6 @@ module.exports = {
             title: 'Gatsby RSS feed',
           },
         ],
-      },
-    },
-    {
-      resolve: `gatsby-plugin-mailgo`,
-      options: {
-        mailgoConfig: {
-          dark: true,
-        },
       },
     },
     {
