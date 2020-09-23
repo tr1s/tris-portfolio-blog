@@ -19,6 +19,28 @@ header {
   &:hover {
     border-bottom: 2px solid darken(#f1f3f5, 6);
   }
+}
+
+.nav {
+  // height: 100%;
+  max-height: 8rem;
+  padding: 1rem 1.7rem;
+  font-family: $font-mono;
+  border: 2px solid darken(#f1f3f5, 2);
+  border-top: none;
+  border-bottom: none;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  &:hover {
+    border: 2px solid darken(#f1f3f5, 6);
+    border-top: none;
+    border-bottom: none;
+  }
+  @include respond-to("mobile-large") {
+    padding: 5%;
+  }
   .title {
     h1 {
       color: $color-main;
@@ -35,27 +57,6 @@ header {
     &:focus {
       color: $color-main;
     }
-  }
-}
-
-.nav {
-  padding: 1rem 1.7rem;
-  font-family: $font-mono;
-  border: 2px solid darken(#f1f3f5, 2);
-  border-top: none;
-  border-bottom: none;
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
-  align-items: center;
-  &:hover {
-    border: 2px solid darken(#f1f3f5, 6);
-    border-top: none;
-    border-bottom: none;
-  }
-  @include respond-to("mobile-large") {
-    padding: 6rem;
-    padding-bottom: 4rem;
   }
   .nav-links {
     display: flex;

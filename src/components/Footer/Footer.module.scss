@@ -8,8 +8,14 @@
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
+    @include respond-to("mobile-large") {
+      flex-direction: column-reverse;
+    }
     .copyright {
       padding: 0 1.7rem;
+      @include respond-to("mobile-large") {
+        padding-bottom: 2rem;
+      }
     }
     .footer-links {
       padding: 0 1.7rem;
@@ -34,6 +40,9 @@
       color: $black;
       background: $white;
       border: 1px solid $black;
+    }
+    @include respond-to("mobile-large") {
+      display: none;
     }
   }
 }

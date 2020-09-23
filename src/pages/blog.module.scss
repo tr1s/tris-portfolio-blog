@@ -1,33 +1,42 @@
 /* Blog page styles
 ========================================================================== */
 
-.posts-container {
+div.posts-container {
   margin-bottom: 10rem;
 }
-.post {
-  width: calc(69ch + 11rem);
+ul.post-container {
+  position: relative;
+}
+li.post {
   max-width: 100%;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
   a.post-link {
+    padding: 2.1rem 2rem;
     font-size: 2.56rem;
     font-family: $font-body-bold;
+    letter-spacing: 0rem;
+    line-height: 1.4;
+    text-align: center;
     display: flex;
     flex-direction: column;
-    letter-spacing: 0rem;
-    padding: 2.1rem 2rem;
     color: $grey;
-    border: 1px solid #fff;
+    border: 2px solid darken(#f1f3f5, 2);
     border-radius: $border-radius;
     border-bottom-left-radius: $border-radius;
     border-bottom-right-radius: $border-radius;
-    border: 1px solid darken(#f1f3f5, 7);
-    background: lighten(#f1f3f5, 2);
-    background: lighten($color-highlight, 23);
+    // background: -webkit-linear-gradient($blue, $grey);
+    // background-clip: text;
+    // -webkit-background-clip: text;
+    // -webkit-text-fill-color: transparent;
     &:hover,
     &:focus {
       color: $color-main;
       text-decoration: none;
-      background: lighten($color-highlight, 21);
+      background: lighten($color-main, 47);
+      border: 2px solid #5c60a0;
+      outline: none;
       @include respond-to("mobile-large") {
         border: none;
       }
@@ -35,19 +44,23 @@
     @include respond-to("mobile-large") {
       flex-direction: column-reverse;
       border: none;
-      background: none;
-      font-family: $font-body-bold;
-      padding: 0;
-    }
-    small {
-      color: $black;
+      border-left: 2px solid darken(#f1f3f5, 2);
+      text-align: left;
+      letter-spacing: 0.101rem;
+      padding: 1rem;
+      padding-right: 2rem;
+      font-size: 1.6rem;
     }
   }
   small {
-    font-family: $font-mono;
+    color: $black;
     font-size: 1.1rem;
+    font-family: $font-mono-bold;
   }
 }
 .post:not(:last-child) {
   margin-bottom: 4rem;
+  @include respond-to("mobile-large") {
+    margin-bottom: 2rem;
+  }
 }

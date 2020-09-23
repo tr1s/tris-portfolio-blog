@@ -13,54 +13,55 @@
 
 .projects {
   margin: 0 auto;
-
+  margin-bottom: 8rem;
   .projects-list {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-bottom: 6rem;
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    gap: 4rem;
+    grid-gap: 4rem;
+    @include respond-to("tablet") {
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    }
+    @include respond-to("mobile-large") {
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    }
+    @include respond-to("mobile-small") {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
   }
   .project-link {
     border-radius: $border-radius;
     background: $white;
     align-self: stretch;
-    border: 1px solid rgba(0, 0, 0, 0.14);
+    border: 2px solid darken(#f1f3f5, 2);
     border-top: 4px solid $grey;
     border-radius: $border-radius;
-    flex-basis: 469px;
-    width: calc(469px - 2rem);
-    margin: 2rem;
-    // box-shadow: 0 0px 0px #ebecee;
-    transition: 0.2s all linear;
+    transition: 0.2s all ease-out;
     position: relative;
     top: 0;
-    @include respond-to("tablet") {
-      margin: 0;
-      margin-bottom: 4rem;
-    }
     &:hover,
     &:focus {
-      border: 1px solid darken(#f1f3f5, 21);
+      border: 2px solid darken(#f1f3f5, 7);
       border-top: 4px solid $black;
       background: lighten($color-highlight, 23);
-      // box-shadow: 0 8px 4px darken(#ebecee, 1);
-      transition: 0.2s all linear;
-      top: -0.3rem;
+      top: -0.4rem;
+      transition: 0.2s all ease-out;
     }
     &:hover .info,
     &:focus .info {
-      border-top: 1px solid darken(#f1f3f5, 21);
+      border-top: 2px solid darken(#f1f3f5, 7);
       background: lighten($color-highlight, 23);
-      transition: 0.2s all linear;
+      transition: 0.2s all ease-out;
     }
     &:hover .info h2,
     &:focus .info h2 {
       color: $color-main;
-      transition: 0.4s all linear;
+      transition: 0.4s all ease-out;
     }
     &:active .info h2 {
       color: $color-secondary;
-      transition: 0.4s all linear;
+      transition: 0.2s all ease-out;
     }
   }
   .project {
@@ -68,11 +69,14 @@
     flex-direction: column-reverse;
     .info {
       background: $white;
-      border-top: 1px solid rgba(0, 0, 0, 0.14);
+      border-top: 2px solid darken(#f1f3f5, 2);
       padding: 3rem;
       border-bottom-left-radius: $border-radius;
       border-bottom-right-radius: $border-radius;
-      transition: 0.2s all linear;
+      transition: 0.2s all ease-out;
+      @include respond-to("mobile-large") {
+        padding: 3.5rem 5%;
+      }
     }
     h2 {
       color: $grey;

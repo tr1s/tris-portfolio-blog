@@ -14,8 +14,7 @@ function Footer() {
           </ul>
 
           <div className={footerStyles.copyright}>
-            &copy; {new Date().getFullYear()} ~ {' '}
-            <a href="https://www.gatsbyjs.org">Tristan Michael Lawrence</a>
+            <p>&copy; {new Date().getFullYear()} ~ Tristan Michael Lawrence</p>
           </div>
         </div>
         <p>

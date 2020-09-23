@@ -26,17 +26,6 @@ const Header = () => {
             <Link to="/blog" activeClassName={headerStyles.active}>Blog</Link>
             {/* <a href="https://nightizm.com">Music</a> */}
           </div>
-          {/* <div className={headerStyles.socialLinks}>
-            <a href="mailto:trislaw@gmail.com" target="_blank" rel="noopener noreferrer">
-              <img src={mail} alt="" />
-            </a>
-            <a href="https://github.com/tr1s" target="_blank" rel="noopener noreferrer">
-              <img src={github} alt="" />
-            </a>
-            <a href="https://twitter.com/triscodes" target="_blank" rel="noopener noreferrer">
-              <img src={twitter} alt="" />
-            </a>
-          </div> */}
         </nav>
 
       </div>

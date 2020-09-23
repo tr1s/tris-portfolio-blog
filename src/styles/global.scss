@@ -144,7 +144,6 @@ li,
 }
 
 a {
-  display: inline-block;
   text-decoration: none;
   color: $grey;
   &:hover,
@@ -165,32 +164,33 @@ img {
 .quote {
   padding: 14rem 0;
   padding-bottom: 8rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  line-height: 1.6;
   font-family: $font-body;
   text-align: center;
   width: 56ch;
   max-width: 100%;
   margin: 0 auto;
-  line-height: 1.6;
+  @include respond-to("mobile-large") {
+    padding: 10rem 0.1rem 2rem 4rem;
+    margin: 0;
+    width: 100%;
+    font-size: 1.1rem;
+    text-align: right;
+  }
   span {
     color: $black;
     font-family: $font-mono-bold;
-  }
-  img {
-    width: 3rem;
-    margin-top: 2rem;
-    animation: 26s linear infinite rotate;
-    display: none;
   }
 }
 
 .page-info {
   padding-left: 6rem;
   margin-bottom: 4rem;
-  width: 590px;
-  width: 50%;
+  width: 630px;
+  max-width: 100%;
+  @include respond-to("tablet") {
+    padding-left: 0;
+  }
   h2 {
     width: 560px;
     max-width: 100%;
@@ -199,7 +199,16 @@ img {
     line-height: 1.1;
     text-align: left;
     margin: 0;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    @include respond-to("tablet") {
+      width: 100%;
+      padding-right: 2rem;
+      font-size: 4.3rem;
+    }
+    @include respond-to("mobile-large") {
+      font-size: 4.3rem;
+      margin-bottom: 0.5rem;
+    }
     span {
       color: $color-link;
     }
@@ -209,8 +218,12 @@ img {
     max-width: 100%;
     font-size: 2.1rem;
     line-height: 1.6;
-    margin-bottom: 10rem;
     font-family: $font-heading-regular;
     margin-left: 0.4rem;
+    @include respond-to("tablet") {
+      font-size: 1.6rem;
+      padding-right: 2rem;
+      line-height: 1.5;
+    }
   }
 }

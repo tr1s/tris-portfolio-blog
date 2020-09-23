@@ -21,9 +21,10 @@ class BlogPostTemplate extends Component {
       <Layout location={this.props.location} title={siteTitle}>
         <Head title={post.frontmatter.title} description={post.excerpt} />
 
-        <p className="quote"><em>"A post explaining the current article "New Beginnings in a Time of Uncertainty" <span>— Tristan</span></em></p>
-
         <section className={`inner-wrapper ${BlogPostStyles.postWrapper}`}>
+
+          {/* QUOTE */}
+          <p className="quote"><em>"A post explaining the current article "New Beginnings in a Time of Uncertainty" <span>— Tristan</span></em></p>
 
           {/* POST INFO */}
           <div className={BlogPostStyles.postInfo}>

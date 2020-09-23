@@ -11,6 +11,14 @@
     padding: 6rem 6rem 4rem 6rem;
     display: flex;
     justify-content: center;
+    @include respond-to("tablet-large") {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    @include respond-to("mobile-large") {
+      padding: 4rem 4rem 0 4rem;
+      padding: 3.1rem 5% 0 5%;
+    }
     &:hover {
       border-left: 2px solid darken(#f1f3f5, 6);
       border-right: 2px solid darken(#f1f3f5, 6);
@@ -28,18 +36,31 @@
     text-align: left;
     margin: 0;
     margin-bottom: 1rem;
+    @include respond-to("mobile-large") {
+      font-size: 4.3rem;
+    }
   }
 }
 
 .form {
+  width: 100%;
+  padding: 4rem 0;
   display: flex;
   justify-content: center;
-  padding: 4rem 0;
+  @include respond-to("tablet-large") {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  @include respond-to("tablet-large") {
+    padding-top: 3rem;
+  }
   label {
     position: relative;
   }
   input {
     width: 400px;
+    max-width: 100%;
+    height: 5.2rem;
     padding: 1.2rem 1.8rem;
     padding-top: 1.6rem;
     margin-right: 1rem;
@@ -60,8 +81,12 @@
     &:active {
       box-shadow: 0 2px 0 $color-main;
     }
+    @include respond-to("tablet-large") {
+      width: 100%;
+    }
   }
   button {
+    height: 5.2rem;
     font-family: $font-body-medium;
     padding: 0 1.8rem;
     border: none;

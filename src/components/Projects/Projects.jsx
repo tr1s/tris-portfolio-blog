@@ -25,11 +25,9 @@ const Projects = () => {
       </div>
 
       <div className="page-info">
-        <h2>Featured www.ork</h2>
-        <p>Focusing on user experience, performance, accessibility, simplicity, and aesthetic — I bridge the gap as a meticulous developer with an adoration for design. Have a look at some of my latest works:</p>
+        <h2>Work _</h2>
+        <p>Focusing on user experience, performance, accessibility, simplicity, and aesthetic — I bridge the gap as a meticulous developer with an adoration for design:</p>
       </div>
-
-      <p className={projectStyles.title}></p>
 
       {/* PROJECTS LIST */}
       <div className={projectStyles.projectsList}>

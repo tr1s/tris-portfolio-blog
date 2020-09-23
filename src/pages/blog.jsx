@@ -50,31 +50,29 @@ const Blog = (props) => {
               <em>"Life is bristling with thorns, and I know no other remedy than to cultivate one's own garden." <span>— Voltaire</span></em>
             </p>
 
-            <div className="page-info">
-              <h2 className={blogStyles.title}>Blog / Digital Garden</h2>
-              <p>Expressing myself and teaching others through words:</p>
+            <div className="page-info blog">
+              <h2 className={blogStyles.title}>Blog _</h2>
+              <p>I plan to occasionally write about topics I'm learning to help <a href="https://golden.com/wiki/Feynman_Technique" target="_blank" rel="noopener noreferrer">solidify my understanding</a> while ideally helping others in the process:</p>
             </div>
 
             {/* <figure className={blogStyles.portrait}>
               <img src={blogPostSvg} alt="A portrait photograph of Tristan Lawrence." />
             </figure> */}
 
-            <div>
+            <ol className={blogStyles.postContainer}>
               {posts.map(({ node }) => {
                 const title = node.frontmatter.title || node.fields.slug;
 
                 return (
-                  <ul className={blogStyles.post} key={node.fields.slug}>
-                    <li>
-                      <Link className={blogStyles.postLink} to={node.fields.slug}>
-                        <small>{node.frontmatter.date}</small>
-                        {title}
-                      </Link>
-                    </li>
-                  </ul>
+                  <li className={blogStyles.post} key={node.fields.slug}>
+                    <Link className={blogStyles.postLink} to={node.fields.slug}>
+                      <small>{node.frontmatter.date}</small>
+                      {title}
+                    </Link>
+                  </li>
                 )
               })}
-            </div>
+            </ol>
           </div>
         </div>
 

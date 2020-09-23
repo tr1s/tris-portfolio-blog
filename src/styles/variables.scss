@@ -10,9 +10,12 @@ $font-body: "Hind Regular", -apple-system, sans-serif;
 $font-mono: "Magda", monospace;
 $font-mono-bold: "Magda Bold", monospace;
 
-$border-radius: 4px;
+$border-radius: 6px;
+$border-color: darken(#f1f3f5, 2);
+$border-hover-color: darken(#f1f3f5, 7);
+$border-width: 2px;
 
-// colors
+/* Colors _____________________________*/
 $white: #fff;
 $white-soft: #f9f9f9;
 $true-black: #000000;
@@ -26,18 +29,18 @@ $light-blue: #ebf5fe;
 $silver: #888888;
 $blue: #5555c9;
 $green: #3f7b62;
-$purple: #7247c0;
+$purple: #5c60a0;
 $pink: #fd758e;
 
-/* Main Colours _____________________________*/
+/* Main Colors _____________________________*/
 $color-main: #021627;
 $color-main: #3f7b62;
 $color-main: #0476df;
-$color-secondary: #f29189;
-$color-secondary: #e34534;
+$color-main: #3f6fbe;
+$color-main-hover: #5c60a0;
+$color-secondary: #be3f6f;
+$color-secondary: #cc3233;
 $color-accent: #e2f30c;
-$color-accent: #e40779;
-$color-accent: #e34534;
 $color-accent: #0476df;
 $color-highlight: #81c1fc;
 

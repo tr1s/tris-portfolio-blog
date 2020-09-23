@@ -17,9 +17,9 @@ const Newsletter = () => {
             action="https://app.convertkit.com/forms/1669991/subscriptions"
             method="post"
           >
-            <label htmlFor="name">
+            {/* <label htmlFor="name">
               <input type="text" id="name" name="fields[first_name]" placeholder="Enter your first name:" />
-            </label>
+            </label> */}
             <label htmlFor="email">
               <input type="email" name="email_address" id="email" placeholder="Enter your email:" required />
             </label>
