@@ -20,9 +20,8 @@ html {
 
 body {
   background: #fff;
-  // background: #fcfcfc;
-  // background: #f1f3f5;
   border-bottom: none;
+  margin-top: 8rem;
 }
 
 body::-webkit-scrollbar {
@@ -148,7 +147,7 @@ a {
   color: $grey;
   &:hover,
   &:focus {
-    color: $color-accent;
+    color: $color-link;
   }
 }
 
@@ -157,13 +156,8 @@ img {
   display: block;
 }
 
-.dots {
-  font-family: $font-mono;
-}
-
 .quote {
-  padding: 14rem 0;
-  padding-bottom: 8rem;
+  padding: 8rem 0;
   line-height: 1.6;
   font-family: $font-body;
   text-align: center;
@@ -171,7 +165,7 @@ img {
   max-width: 100%;
   margin: 0 auto;
   @include respond-to("mobile-large") {
-    padding: 10rem 0.1rem 2rem 4rem;
+    padding: 2rem 0.1rem 4rem 4rem;
     margin: 0;
     width: 100%;
     font-size: 1.1rem;
@@ -224,6 +218,13 @@ img {
       font-size: 1.6rem;
       padding-right: 2rem;
       line-height: 1.5;
+    }
+    a {
+      color: $color-main;
+      &:hover,
+      &:focus {
+        color: $color-secondary;
+      }
     }
   }
 }

@@ -11,9 +11,9 @@
     padding-left: 0;
   }
   .info {
-    padding-top: 4rem;
+    padding-top: 5rem;
     background: rgba($white, 0.7);
-    .headline {
+    h1.headline {
       width: 560px;
       max-width: 100%;
       font-size: 5.4rem;
@@ -21,7 +21,7 @@
       line-height: 1.1;
       text-align: left;
       margin: 0;
-      margin-bottom: 2rem;
+      margin-bottom: 1.5rem;
       @include respond-to("tablet") {
         width: 100%;
         padding-right: 2rem;
@@ -36,7 +36,7 @@
         color: $color-link;
       }
     }
-    .description {
+    p.description {
       width: 590px;
       max-width: 100%;
       font-size: 2.1rem;
@@ -45,15 +45,14 @@
       font-family: $font-heading-regular;
       @include respond-to("tablet") {
         width: 100%;
-        // font-family: $font-heading;
         line-height: 1.5;
         font-size: 1.6rem;
-        margin-bottom: 0;
       }
       span {
-        color: $black;
+        color: $grey;
       }
       span:nth-of-type(1) {
+        // color: $purple;
         &:hover,
         &:focus {
           color: $purple;
@@ -61,6 +60,7 @@
         }
       }
       span:nth-of-type(2) {
+        // color: $pink;
         &:hover,
         &:focus {
           color: $pink;
@@ -68,6 +68,7 @@
         }
       }
       span:nth-of-type(3) {
+        // color: $green;
         &:hover,
         &:focus {
           color: $green;
@@ -75,6 +76,7 @@
         }
       }
       span:nth-of-type(4) {
+        // color: $color-main;
         &:hover,
         &:focus {
           color: $color-main;
@@ -83,7 +85,12 @@
       }
       a {
         font-weight: 900;
-        color: $color-secondary;
+        color: $black;
+        font-family: $font-heading-bold;
+        &:hover,
+        &:focus {
+          color: $blue;
+        }
       }
     }
   }
@@ -98,6 +105,7 @@
       width: calc(666px - 69px);
       max-width: 100%;
       border: 6px solid $black;
+      border-radius: $border-radius;
     }
   }
 }

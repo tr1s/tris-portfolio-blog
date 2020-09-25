@@ -5,8 +5,6 @@ import Layout from '../components/Layout/Layout'
 import Head from '../components/head'
 import Newsletter from '../components/Newsletter/Newsletter';
 
-import blogPostSvg from '../assets/images/blog/blog.svg';
-
 import blogStyles from './blog.module.scss';
 
 const Blog = (props) => {
@@ -54,10 +52,6 @@ const Blog = (props) => {
               <h2 className={blogStyles.title}>Blog _</h2>
               <p>I plan to occasionally write about topics I'm learning to help <a href="https://golden.com/wiki/Feynman_Technique" target="_blank" rel="noopener noreferrer">solidify my understanding</a> while ideally helping others in the process:</p>
             </div>
-
-            {/* <figure className={blogStyles.portrait}>
-              <img src={blogPostSvg} alt="A portrait photograph of Tristan Lawrence." />
-            </figure> */}
 
             <ol className={blogStyles.postContainer}>
               {posts.map(({ node }) => {

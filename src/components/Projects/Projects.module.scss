@@ -34,7 +34,7 @@
     border-radius: $border-radius;
     background: $white;
     align-self: stretch;
-    border: 2px solid darken(#f1f3f5, 2);
+    border: 2px solid $border-color;
     border-top: 4px solid $grey;
     border-radius: $border-radius;
     transition: 0.2s all ease-out;
@@ -42,16 +42,21 @@
     top: 0;
     &:hover,
     &:focus {
-      border: 2px solid darken(#f1f3f5, 7);
+      border: 2px solid $border-hover-color;
       border-top: 4px solid $black;
-      background: lighten($color-highlight, 23);
+      background: $color-main-hover;
       top: -0.4rem;
       transition: 0.2s all ease-out;
     }
+    &:active {
+      border-left: 2px dashed $black;
+      border-right: 2px dashed $black;
+      border-bottom: 2px dashed $black;
+    }
     &:hover .info,
     &:focus .info {
-      border-top: 2px solid darken(#f1f3f5, 7);
-      background: lighten($color-highlight, 23);
+      background: $color-main-hover;
+      border-top: 2px solid $border-hover-color;
       transition: 0.2s all ease-out;
     }
     &:hover .info h2,
@@ -69,7 +74,7 @@
     flex-direction: column-reverse;
     .info {
       background: $white;
-      border-top: 2px solid darken(#f1f3f5, 2);
+      border-top: 2px solid $border-color;
       padding: 3rem;
       border-bottom-left-radius: $border-radius;
       border-bottom-right-radius: $border-radius;

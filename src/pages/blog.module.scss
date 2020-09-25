@@ -8,48 +8,61 @@ ul.post-container {
   position: relative;
 }
 li.post {
-  max-width: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  border: 2px solid $border-color;
+  border-radius: $border-radius;
+  padding: 1rem;
+  @include respond-to("mobile-large") {
+    border: none;
+    padding: 0;
+  }
+  &:hover,
+  &:focus {
+    border: 2px solid $border-hover-color;
+  }
+  &:active {
+    border: 2px dashed $black;
+    @include respond-to("mobile-large") {
+      border: none;
+      padding: 0;
+    }
+  }
   a.post-link {
-    padding: 2.1rem 2rem;
+    color: $grey;
     font-size: 2.56rem;
+    padding: 1.5rem;
+    padding-top: 2rem;
     font-family: $font-body-bold;
     letter-spacing: 0rem;
     line-height: 1.4;
     text-align: center;
     display: flex;
     flex-direction: column;
-    color: $grey;
-    border: 2px solid darken(#f1f3f5, 2);
+    background: $color-main-hover;
     border-radius: $border-radius;
-    border-bottom-left-radius: $border-radius;
-    border-bottom-right-radius: $border-radius;
-    // background: -webkit-linear-gradient($blue, $grey);
-    // background-clip: text;
-    // -webkit-background-clip: text;
-    // -webkit-text-fill-color: transparent;
-    &:hover,
-    &:focus {
-      color: $color-main;
-      text-decoration: none;
-      background: lighten($color-main, 47);
-      border: 2px solid #5c60a0;
-      outline: none;
-      @include respond-to("mobile-large") {
-        border: none;
-      }
-    }
     @include respond-to("mobile-large") {
       flex-direction: column-reverse;
       border: none;
-      border-left: 2px solid darken(#f1f3f5, 2);
+      border-left: 2px solid $border-color;
       text-align: left;
       letter-spacing: 0.101rem;
       padding: 1rem;
       padding-right: 2rem;
       font-size: 1.6rem;
+    }
+    &:hover,
+    &:focus {
+      color: $color-secondary;
+      background: darken($color-main-hover, 2);
+      outline: none;
+      @include respond-to("mobile-large") {
+        background: none;
+      }
+    }
+    &:active {
+      color: $color-secondary;
     }
   }
   small {

@@ -1,13 +1,13 @@
 .newsletter {
-  border-top: 2px solid darken(#f1f3f5, 2);
-  border-bottom: 2px solid darken(#f1f3f5, 2);
+  border-top: 2px solid $border-color;
+  border-bottom: 2px solid $border-color;
   &:hover {
-    border-top: 2px solid darken(#f1f3f5, 6);
-    border-bottom: 2px solid darken(#f1f3f5, 6);
+    border-top: 2px solid $border-hover-color;
+    border-bottom: 2px solid $border-hover-color;
   }
   .newsletter-container {
-    border-left: 2px solid darken(#f1f3f5, 2);
-    border-right: 2px solid darken(#f1f3f5, 2);
+    border-left: 2px solid $border-color;
+    border-right: 2px solid $border-color;
     padding: 6rem 6rem 4rem 6rem;
     display: flex;
     justify-content: center;
@@ -20,8 +20,8 @@
       padding: 3.1rem 5% 0 5%;
     }
     &:hover {
-      border-left: 2px solid darken(#f1f3f5, 6);
-      border-right: 2px solid darken(#f1f3f5, 6);
+      border-left: 2px solid $border-hover-color;
+      border-right: 2px solid $border-hover-color;
     }
   }
   .newsletter-container .info {
@@ -67,19 +67,19 @@
     outline: none;
     border-radius: $border-radius;
     border: none;
-    background: lighten($color-highlight, 23);
-    box-shadow: 0 2px 0 $grey;
+    border: 2px solid $border-color;
+    background: $color-main-hover;
     &::placeholder {
       color: $grey;
     }
     &:hover {
-      box-shadow: 0 2px 0 $black;
+      border: 2px solid $border-hover-color;
     }
     &:focus {
-      box-shadow: 0 2px 0 $color-main;
+      border: 2px dashed $black;
     }
     &:active {
-      box-shadow: 0 2px 0 $color-main;
+      border: 2px dashed $black;
     }
     @include respond-to("tablet-large") {
       width: 100%;
@@ -89,20 +89,18 @@
     height: 5.2rem;
     font-family: $font-body-medium;
     padding: 0 1.8rem;
-    border: none;
+    background: $color-main-hover;
     border-radius: $border-radius;
-    background: darken(#f1f3f5, 2);
-    box-shadow: 0 2px 0px $grey;
+    border: 2px solid $border-hover-color;
     cursor: pointer;
     &:hover,
     &:focus {
-      background: darken(#f1f3f5, 6);
+      border: 2px dashed $border-hover-color;
       outline: none;
     }
     &:active {
-      border-bottom: 2px solid darken($color-main, 6);
-      box-shadow: 0 0 0 darken($color-main, 6);
-      background: darken(#f1f3f5, 6);
+      border: 2px dashed $green;
+      background: lighten(#006e51, 69);
       outline: none;
     }
   }

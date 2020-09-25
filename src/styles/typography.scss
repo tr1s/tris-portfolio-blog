@@ -43,18 +43,11 @@
     url("../assets/fonts/MillerBannerBook.woff") format("woff");
 }
 @font-face {
-  font-family: "Miller Banner Black";
+  font-family: "Miller Banner Semibold";
   font-style: normal;
   font-weight: 600;
-  src: local("Miller Banner Black"), local("MillerBannerBlack"),
-    url("../assets/fonts/MillerBannerBlack.woff") format("woff");
-}
-@font-face {
-  font-family: "Miller Banner Black Italic";
-  font-style: normal;
-  font-weight: 600;
-  src: local("Miller Banner Black Italic"), local("MillerBannerBlackItalic"),
-    url("../assets/fonts/MillerBannerBlackItalic.woff") format("woff");
+  src: local("Miller Banner Semibold"), local("MillerBannerSemibold"),
+    url("../assets/fonts/MillerBannerSemibold.woff") format("woff");
 }
 
 @font-face {

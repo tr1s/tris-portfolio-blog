@@ -103,11 +103,12 @@
   }
   code {
     grid-column: 1 / 4 !important;
-    background: darken(#f1f3f5, 1);
-    background: lighten($grey, 52);
-    padding: 0.4rem 0.8rem;
+    font-family: $font-mono-bold;
+    background: $color-main-hover;
+    border: 1px dashed darken($color-main-hover, 16);
+    border-radius: $border-radius;
+    padding: 0.6rem 0.9rem;
     color: $color-secondary;
-    font-family: $font-mono;
   }
   pre {
     font-size: 1.9rem;
