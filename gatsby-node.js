@@ -5,6 +5,7 @@ exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
 
   const blogPost = path.resolve(`./src/templates/blog-post.jsx`)
+
   return graphql(
     `
       {
@@ -22,6 +23,7 @@ exports.createPages = ({ graphql, actions }) => {
                 title
               }
               body
+              timeToRead
             }
           }
         }
@@ -32,8 +34,10 @@ exports.createPages = ({ graphql, actions }) => {
       throw result.errors
     }
 
-    // Create blog posts pages.
+    // Create blog post pages.
     const posts = result.data.allMdx.edges
+
+    // Create private blog post pages?
 
     posts.forEach((post, index) => {
       const previous = index === posts.length - 1 ? null : posts[index + 1].node

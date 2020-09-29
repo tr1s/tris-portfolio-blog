@@ -66,14 +66,13 @@
     margin-right: 1rem;
     outline: none;
     border-radius: $border-radius;
-    border: none;
-    border: 2px solid $border-color;
+    border: 2px dashed $border-hover-color;
     background: $color-main-hover;
     &::placeholder {
       color: $grey;
     }
     &:hover {
-      border: 2px solid $border-hover-color;
+      border: 2px dashed $grey;
     }
     &:focus {
       border: 2px dashed $black;
@@ -83,6 +82,7 @@
     }
     @include respond-to("tablet-large") {
       width: 100%;
+      margin-bottom: 1rem;
     }
   }
   button {
@@ -91,15 +91,15 @@
     padding: 0 1.8rem;
     background: $color-main-hover;
     border-radius: $border-radius;
-    border: 2px solid $border-hover-color;
+    border: 2px dashed $border-hover-color;
     cursor: pointer;
     &:hover,
     &:focus {
-      border: 2px dashed $border-hover-color;
+      border: 2px dashed $grey;
       outline: none;
     }
     &:active {
-      border: 2px dashed $green;
+      border: 2px dashed $black;
       background: lighten(#006e51, 69);
       outline: none;
     }

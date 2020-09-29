@@ -31,7 +31,7 @@ class BlogPostTemplate extends Component {
             <h1>{post.frontmatter.title}</h1>
             <p>{post.frontmatter.date}</p>
             <img className={BlogPostStyles.reading} src={reading} alt="" />
-            <div>............</div>
+            <div>................</div>
           </div>
 
           {/* ARTICLE */}
@@ -43,14 +43,14 @@ class BlogPostTemplate extends Component {
               <li>
                 {previous && (
                   <Link to={previous.fields.slug} rel="prev">
-                    ← {previous.frontmatter.title}
+                    <span>←</span> {previous.frontmatter.title}
                   </Link>
                 )}
               </li>
               <li>
                 {next && (
                   <Link to={next.fields.slug} rel="next">
-                    {next.frontmatter.title} →
+                    {next.frontmatter.title} <span>→</span>
                   </Link>
                 )}
               </li>

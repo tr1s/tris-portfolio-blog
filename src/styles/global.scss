@@ -12,6 +12,7 @@
 
 *::selection {
   background: lighten($color-highlight, 21);
+  background: lighten($color-secondary, 37);
 }
 
 html {
@@ -145,6 +146,16 @@ li,
 a {
   text-decoration: none;
   color: $grey;
+
+  // Ref: https://css-tricks.com/snippets/css/prevent-long-urls-from-breaking-out-of-container/
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: break-word;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
   &:hover,
   &:focus {
     color: $color-link;
@@ -154,6 +165,10 @@ a {
 img {
   width: 100%;
   display: block;
+}
+
+img:not([alt]) {
+  border: 6px solid red;
 }
 
 .quote {
