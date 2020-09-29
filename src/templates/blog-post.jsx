@@ -31,6 +31,9 @@ class BlogPostTemplate extends Component {
             <h1>{post.frontmatter.title}</h1>
             <p>{post.frontmatter.date}</p>
             <img className={BlogPostStyles.reading} src={reading} alt="" />
+            <p>
+              {post.timeToRead} minute read
+            </p>
             <div>................</div>
           </div>
 
@@ -82,6 +85,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
       }
       body
+      timeToRead
     }
   }
 `
