@@ -1,12 +1,12 @@
 const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
-exports.createPages = ({ graphql, actions }) => {
+exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
 
   const blogPost = path.resolve(`./src/templates/blog-post.jsx`)
 
-  return graphql(
+  const result = await graphql(
     `
       {
         allMdx(
@@ -28,35 +28,32 @@ exports.createPages = ({ graphql, actions }) => {
         }
       }
     `
-  ).then(result => {
-    if (result.errors) {
-      throw result.errors
-    }
+  )
 
-    // Create blog post pages.
-    const posts = result.data.allMdx.edges
+  if (result.errors) {
+    throw result.errors
+  }
 
-    // Create private blog post pages?
+  const posts = result.data.allMdx.edges
 
-    posts.forEach((post, index) => {
-      const previous = index === posts.length - 1 ? null : posts[index + 1].node
-      const next = index === 0 ? null : posts[index - 1].node
+  posts.forEach((post, index) => {
+    const previous = index === posts.length - 1 ? null : posts[index + 1].node
+    const next = index === 0 ? null : posts[index - 1].node
 
-      const newSlug = post.node.frontmatter.title
-        .toLowerCase()
-        .replace(/[^\w ]+/g, '')
-        .replace(/\s+/g, '-');
+    const newSlug = post.node.frontmatter.title
+      .toLowerCase()
+      .replace(/[^\w ]+/g, '')
+      .replace(/\s+/g, '-');
 
-      createPage({
-        path: post.node.fields.slug,
-        component: blogPost,
-        context: {
-          slug: post.node.fields.slug,
-          newSlug,
-          previous,
-          next
-        },
-      })
+    createPage({
+      path: post.node.fields.slug,
+      component: blogPost,
+      context: {
+        slug: post.node.fields.slug,
+        newSlug,
+        previous,
+        next
+      },
     })
   })
 }
@@ -72,4 +69,17 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       value: slug,
     })
   }
+}
+
+// Stringify Helper
+function slugify(str) {
+  return (
+    str &&
+    str
+      .match(
+        /[A-Z]{2,}(?=[A-Z][a-z]+[0-9]*|\b)|[A-Z]?[a-z]+[0-9]*|[A-Z]|[0-9]+/g
+      )
+      .map((x) => x.toLowerCase())
+      .join('-')
+  )
 }
