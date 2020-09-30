@@ -2,7 +2,7 @@
 ========================================================================== */
 
 .active {
-  color: $color-secondary;
+  color: $black;
   font-family: $font-mono-bold;
 }
 
@@ -40,19 +40,20 @@ nav.nav {
   }
   .title {
     h1 {
-      color: $color-main;
-    }
-    &:active span {
-      color: $color-secondary;
-    }
-    span {
       color: $black;
     }
-  }
-  .title h1 {
-    &:hover,
-    &:focus {
-      color: $color-main;
+    span:first-child {
+      color: #4a6991;
+    }
+    span:last-child {
+      color: $grey;
+      &:hover,
+      &:focus {
+        color: $black;
+      }
+      &:active {
+        color: $color-main;
+      }
     }
   }
   .nav-links {

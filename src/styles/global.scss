@@ -172,6 +172,7 @@ img:not([alt]) {
 }
 
 .quote {
+  color: $grey;
   padding: 8rem 0;
   line-height: 1.6;
   font-family: $font-body;
@@ -236,9 +237,10 @@ img:not([alt]) {
     }
     a {
       color: $color-main;
+      font-family: $font-heading-bold;
       &:hover,
       &:focus {
-        color: $color-secondary;
+        color: $winter-blue;
       }
     }
   }

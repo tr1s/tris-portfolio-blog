@@ -55,7 +55,7 @@ li.post {
     }
     &:hover,
     &:focus {
-      color: $color-secondary;
+      color: $black;
       background: darken($color-main-hover, 2);
       outline: none;
       @include respond-to("mobile-large") {

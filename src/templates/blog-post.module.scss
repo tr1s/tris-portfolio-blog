@@ -8,6 +8,7 @@
   h1 {
     font-size: 8.9rem;
     padding: 0 6rem;
+    margin-top: -3rem;
     @include respond-to("mobile-large") {
       font-size: 4.3rem;
       padding: 2rem 2rem 0 2rem;
@@ -84,6 +85,7 @@
     &:hover,
     &:focus {
       color: darken($color-link, 14);
+      color: #4a6991;
     }
   }
   ul {
@@ -115,13 +117,12 @@
     }
   }
   code {
-    grid-column: 1 / 4 !important;
+    grid-column: 1 / 4;
     font-family: $font-mono-bold;
     background: $color-main-hover;
     border: 1px dashed darken($color-main-hover, 30);
     border-radius: $border-radius;
     padding: 0.5rem 0.7rem;
-    color: $color-secondary;
     color: $black;
     @include respond-to("mobile-large") {
       padding: 0.3rem 0.6rem;
@@ -166,6 +167,7 @@ ul.navigate {
     display: inline-block;
     width: 100%;
     border-radius: $border-radius;
+    padding: 0 1rem 0 1rem;
     @include respond-to("mobile-large") {
       border-radius: 0;
     }
@@ -178,7 +180,6 @@ ul.navigate {
     }
   }
   li:first-child a {
-    padding: 0 2rem 0 0;
     @include respond-to("mobile-large") {
       margin-bottom: 2rem;
       border-bottom: 2px dashed $border-hover-color;

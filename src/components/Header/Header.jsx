@@ -18,7 +18,7 @@ const Header = () => {
         {/* NAV */}
         <nav className={headerStyles.nav}>
           <Link to="/" className={headerStyles.title}>
-            <h1>tris.<span>codes</span></h1>
+            <h1><span>tris</span>.<span>codes</span></h1>
           </Link>
           <div className={headerStyles.navLinks}>
             <Link to="/" activeClassName={headerStyles.active}>Home</Link>

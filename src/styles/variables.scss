@@ -15,6 +15,8 @@ $border-color: darken(#f1f3f5, 2);
 $border-hover-color: darken(#f1f3f5, 7);
 $border-width: 2px;
 
+$transition: 0.4s all ease-out;
+
 /* Colors _____________________________*/
 $white: #fff;
 $white-soft: #f9f9f9;
@@ -27,19 +29,22 @@ $grey: #495057;
 $grey: darken(#868e96, 14);
 $light-blue: #ebf5fe;
 $silver: #888888;
-$blue: #5555c9;
-$blue: #4a6991;
+$blue: #1650b5;
+$winter-blue: #4a6991;
 $green: #3f7b62;
 $green-2: #9dbf82;
+$light-green: #b3dabd;
 $purple: #5c60a0;
-$pink: #be3f6f;
+$pink: #b66aa3;
+$light-pink: #dab3d0;
+$light-pink: #e9d1e3;
 $red: #b83a31;
 $yellow: #d8af47;
 $brown: #b09483;
 
 /* Main Colors _____________________________*/
-$color-main: $blue;
-// $color-main: #1650b5;
+$color-main: #4a6991;
+$color-main: #1650b5;
 $color-main-hover: #f2f4f8;
 $color-secondary: #b66aa3;
 $color-accent: #e2f30c;

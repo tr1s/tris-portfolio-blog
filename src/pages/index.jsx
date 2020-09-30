@@ -5,6 +5,7 @@ import Newsletter from '../components/Newsletter/Newsletter'
 import Layout from '../components/Layout/Layout'
 import Head from '../components/head'
 import Projects from '../components/Projects/Projects';
+import Button from '../components/Button/Button';
 
 import me from '../assets/images/home/mee.jpg';
 
@@ -50,6 +51,7 @@ const Home = props => {
             <p className={indexStyles.description}>
               I’m just a boy who loves to create — I make <span>progressive web applications</span>, <span>dynamic websites</span>, <span>e-commerce websites</span>, and <span>music</span>. <a href="mailto:trislaw@gmail.com">Email me</a> and let’s talk about ways I can help solve your problems.
             </p>
+            {/* <Button type="link" text="Blog" route="/blog" /> */}
           </div>
 
           {/* PORTRAIT? */}

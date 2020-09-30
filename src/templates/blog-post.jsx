@@ -34,7 +34,7 @@ class BlogPostTemplate extends Component {
             <p>
               {post.timeToRead} minute read
             </p>
-            <div>................</div>
+            <div>...............</div>
           </div>
 
           {/* ARTICLE */}
