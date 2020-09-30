@@ -55,6 +55,7 @@ const Blog = (props) => {
 
             <ol className={blogStyles.postContainer}>
               {posts.map(({ node }) => {
+                console.log(node);
                 const title = node.frontmatter.title || node.fields.slug;
 
                 return (
