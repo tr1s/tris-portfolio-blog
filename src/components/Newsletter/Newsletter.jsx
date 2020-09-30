@@ -1,11 +1,11 @@
-import React from 'react';
+import React from 'react'
 
-import newsletterStyles from './Newsletter.module.scss';
+import newsletterStyles from './Newsletter.module.scss'
 
 const Newsletter = () => {
   return (
     <section className={newsletterStyles.newsletter}>
-      <div className="inner-wrapper">
+      <div className='inner-wrapper'>
         <div className={newsletterStyles.newsletterContainer}>
           <div className={newsletterStyles.info}>
             <h2 className={newsletterStyles.title}>Sign up</h2>
@@ -14,17 +14,17 @@ const Newsletter = () => {
 
           <form
             className={newsletterStyles.form}
-            action="https://app.convertkit.com/forms/1669991/subscriptions"
-            method="post"
+            action='https://app.convertkit.com/forms/1669991/subscriptions'
+            method='post'
           >
             {/* <label htmlFor="name">
               <input type="text" id="name" name="fields[first_name]" placeholder="Enter your first name:" />
             </label> */}
-            <label htmlFor="email">
-              <input type="email" name="email_address" id="email" placeholder="Enter your email:" required />
+            <label htmlFor='email'>
+              <input type='email' name='email_address' id='email' placeholder='Enter your email:' required />
             </label>
-            <button type="submit">Submit</button>
-        </form>
+            <button type='submit'>Submit</button>
+          </form>
         </div>
       </div>
     </section>
@@ -32,4 +32,4 @@ const Newsletter = () => {
   )
 }
 
-export default Newsletter;
+export default Newsletter

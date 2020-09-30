@@ -1,10 +1,10 @@
-const path = require(`path`)
-const { createFilePath } = require(`gatsby-source-filesystem`)
+const path = require('path')
+const { createFilePath } = require('gatsby-source-filesystem')
 
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
 
-  const blogPost = path.resolve(`./src/templates/blog-post.jsx`)
+  const blogPost = path.resolve('./src/templates/blog-post.jsx')
 
   const result = await graphql(
     `
@@ -43,7 +43,7 @@ exports.createPages = async ({ graphql, actions }) => {
     const newSlug = post.node.frontmatter.title
       .toLowerCase()
       .replace(/[^\w ]+/g, '')
-      .replace(/\s+/g, '-');
+      .replace(/\s+/g, '-')
 
     createPage({
       path: post.node.fields.slug,
@@ -52,7 +52,7 @@ exports.createPages = async ({ graphql, actions }) => {
         slug: post.node.fields.slug,
         previous,
         next
-      },
+      }
     })
   })
 }
@@ -60,18 +60,18 @@ exports.createPages = async ({ graphql, actions }) => {
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions
 
-  if (node.internal.type === `Mdx`) {
+  if (node.internal.type === 'Mdx') {
     const slug = createFilePath({ node, getNode })
     createNodeField({
-      name: `slug`,
+      name: 'slug',
       node,
-      value: slug,
+      value: slug
     })
   }
 }
 
 // Stringify Helper
-function slugify(str) {
+function slugify (str) {
   return (
     str &&
     str

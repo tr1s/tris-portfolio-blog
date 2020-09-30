@@ -4,17 +4,17 @@ import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
 
 const Layout = (props) => {
-  const { children, location } = props;
+  const { children, location } = props
 
   return (
-  <div>
-    <Header />
-    {children}
-    {/* {location.pathname !== "/" && (
+    <div>
+      <Header />
+      {children}
+      {/* {location.pathname !== "/" && (
       <Footer />
     )} */}
-    <Footer />
-  </div>
+      <Footer />
+    </div>
   )
 }
 

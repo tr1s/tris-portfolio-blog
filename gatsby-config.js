@@ -1,44 +1,44 @@
 module.exports = {
   siteMetadata: {
-    title: `tris`,
-    author: `Tristan Lawrence`,
-    description: `Frontend Engineer | Digital Creative | Music producer`,
-    siteUrl: `https://tris.codes/`,
+    title: 'tris',
+    author: 'Tristan Lawrence',
+    description: 'Frontend Engineer | Digital Creative | Music producer',
+    siteUrl: 'https://tris.codes/',
     social: {
-      twitter: `triscodes`,
-    },
+      twitter: 'triscodes'
+    }
   },
   plugins: [
-    `gatsby-plugin-react-helmet-async`,
-    `gatsby-plugin-catch-links`,
-    `gatsby-plugin-sitemap`,
-    `gatsby-plugin-robots-txt`,
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    'gatsby-plugin-react-helmet-async',
+    'gatsby-plugin-catch-links',
+    'gatsby-plugin-sitemap',
+    'gatsby-plugin-robots-txt',
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
     {
-      resolve: `gatsby-plugin-mailgo`,
+      resolve: 'gatsby-plugin-mailgo',
       options: {
         mailgoConfig: {
-          dark: true,
-        },
-      },
+          dark: true
+        }
+      }
     },
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-source-filesystem',
       options: {
         name: 'src',
-        path: `${__dirname}/src/`,
-      },
+        path: `${__dirname}/src/`
+      }
     },
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/content/blog`,
-        name: `blog`,
-      },
+        name: 'blog'
+      }
     },
     {
-      resolve: `gatsby-plugin-sass`,
+      resolve: 'gatsby-plugin-sass',
       options: {
         data: `
             @import './src/styles/variables.scss';
@@ -46,43 +46,43 @@ module.exports = {
             @import './src/styles/functions.scss';
             @import './src/styles/keyframes.scss';
           `,
-        includePaths: ['./src/styles/'],
-      },
+        includePaths: ['./src/styles/']
+      }
     },
     {
-      resolve: `gatsby-plugin-mdx`,
+      resolve: 'gatsby-plugin-mdx',
       options: {
         extensions: ['.mdx', '.md'],
         // a workaround to solve mdx-remark plugin compat issue
         // https://github.com/gatsbyjs/gatsby/issues/15486
         plugins: [
-          `gatsby-remark-images`,
+          'gatsby-remark-images'
         ],
         gatsbyRemarkPlugins: [
           {
-            resolve: `gatsby-remark-images`,
+            resolve: 'gatsby-remark-images',
             options: {
-              maxWidth: 590,
-            },
+              maxWidth: 590
+            }
           },
           {
-            resolve: `gatsby-remark-responsive-iframe`,
+            resolve: 'gatsby-remark-responsive-iframe',
             options: {
-              wrapperStyle: `margin-bottom: 1.0725rem`,
-            },
+              wrapperStyle: 'margin-bottom: 1.0725rem'
+            }
           },
           {
-            resolve: `gatsby-remark-copy-linked-files`,
+            resolve: 'gatsby-remark-copy-linked-files'
           },
 
           {
-            resolve: `gatsby-remark-smartypants`,
-          },
-        ],
-      },
+            resolve: 'gatsby-remark-smartypants'
+          }
+        ]
+      }
     },
     {
-      resolve: `gatsby-plugin-feed`,
+      resolve: 'gatsby-plugin-feed',
       options: {
         query: `
           {
@@ -104,7 +104,7 @@ module.exports = {
                   data: edge.node.frontmatter.date,
                   url: site.siteMetadata.siteUrl + edge.node.fields.slug,
                   guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
-                  custom_elements: [{ 'content:encoded': edge.node.html }],
+                  custom_elements: [{ 'content:encoded': edge.node.html }]
                 })
               })
             },
@@ -135,23 +135,23 @@ module.exports = {
             }
             `,
             output: '/rss.xml',
-            title: 'Gatsby RSS feed',
-          },
-        ],
-      },
+            title: 'Gatsby RSS feed'
+          }
+        ]
+      }
     },
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: 'gatsby-plugin-manifest',
       options: {
-        name: `Tristan Lawrence`,
-        short_name: `tris`,
-        start_url: `/`,
-        background_color: `#ffffff`,
-        theme_color: `#6554`,
-        display: `minimal-ui`,
-        icon: `src/assets/images/favicon-512x512.jpg`,
-      },
+        name: 'Tristan Lawrence',
+        short_name: 'tris',
+        start_url: '/',
+        background_color: '#ffffff',
+        theme_color: '#6554',
+        display: 'minimal-ui',
+        icon: 'src/assets/images/favicon-512x512.jpg'
+      }
     },
-    `gatsby-plugin-offline`,
-  ],
+    'gatsby-plugin-offline'
+  ]
 }
