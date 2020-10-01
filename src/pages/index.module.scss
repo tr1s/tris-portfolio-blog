@@ -3,11 +3,11 @@
 
 .home {
   padding-left: 6rem;
-  background: url("../assets/images/home/birds.svg");
+  background: url('../assets/images/home/birds.svg');
   background-repeat: no-repeat;
   background-position: top right;
   display: flex;
-  @include respond-to("tablet-large") {
+  @include respond-to('tablet-large') {
     padding-left: 0;
   }
   .info {
@@ -22,11 +22,11 @@
       text-align: left;
       margin: 0;
       margin-bottom: 1.5rem;
-      @include respond-to("tablet") {
+      @include respond-to('tablet') {
         width: 100%;
         padding-right: 2rem;
       }
-      @include respond-to("mobile-large") {
+      @include respond-to('mobile-large') {
         width: 100%;
         font-size: 4.3rem;
         padding-right: 2rem;
@@ -43,7 +43,7 @@
       line-height: 1.6;
       margin-bottom: 10rem;
       font-family: $font-heading-regular;
-      @include respond-to("tablet") {
+      @include respond-to('tablet') {
         width: 100%;
         line-height: 1.5;
         font-size: 1.6rem;
@@ -56,7 +56,7 @@
         &:hover,
         &:focus {
           color: $purple;
-          cursor: url("../assets/images/home/window-pwa.svg"), auto;
+          cursor: url('../assets/images/home/window-pwa.svg'), auto;
         }
       }
       span:nth-of-type(2) {
@@ -64,7 +64,7 @@
         &:hover,
         &:focus {
           color: $pink;
-          cursor: url("../assets/images/home/window-design.svg"), auto;
+          cursor: url('../assets/images/home/window-design.svg'), auto;
         }
       }
       span:nth-of-type(3) {
@@ -72,7 +72,7 @@
         &:hover,
         &:focus {
           color: $green;
-          cursor: url("../assets/images/home/shopify.svg"), auto;
+          cursor: url('../assets/images/home/shopify.svg'), auto;
         }
       }
       span:nth-of-type(4) {
@@ -80,7 +80,7 @@
         &:hover,
         &:focus {
           color: $color-main;
-          cursor: url("../assets/images/home/piano.svg"), auto;
+          cursor: url('../assets/images/home/piano.svg'), auto;
         }
       }
       a {
@@ -97,7 +97,7 @@
 
   .portrait {
     margin: 16rem 0 0 6rem;
-    @include respond-to("tablet-large") {
+    @include respond-to('tablet-large') {
       display: none;
     }
     img {

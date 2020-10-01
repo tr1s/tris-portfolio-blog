@@ -11,11 +11,11 @@
     padding: 6rem 6rem 4rem 6rem;
     display: flex;
     justify-content: center;
-    @include respond-to("tablet-large") {
+    @include respond-to('tablet-large') {
       flex-direction: column;
       align-items: flex-start;
     }
-    @include respond-to("mobile-large") {
+    @include respond-to('mobile-large') {
       padding: 4rem 4rem 0 4rem;
       padding: 3.1rem 5% 0 5%;
     }
@@ -36,7 +36,7 @@
     text-align: left;
     margin: 0;
     margin-bottom: 1rem;
-    @include respond-to("mobile-large") {
+    @include respond-to('mobile-large') {
       font-size: 4.3rem;
     }
   }
@@ -47,11 +47,11 @@
   padding: 4rem 0;
   display: flex;
   justify-content: center;
-  @include respond-to("tablet-large") {
+  @include respond-to('tablet-large') {
     flex-direction: column;
     justify-content: flex-start;
   }
-  @include respond-to("tablet-large") {
+  @include respond-to('tablet-large') {
     padding-top: 3rem;
   }
   label {
@@ -80,7 +80,7 @@
     &:active {
       border: 2px dashed $black;
     }
-    @include respond-to("tablet-large") {
+    @include respond-to('tablet-large') {
       width: 100%;
       margin-bottom: 1rem;
     }

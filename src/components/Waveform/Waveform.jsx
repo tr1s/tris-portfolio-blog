@@ -36,7 +36,7 @@ class Waveform extends React.Component {
     return (
       <div className={waveformStyles.container}>
         <button onClick={this.playIt}>
-          <img src={play} alt=""/>
+          <img src={play} alt="" />
         </button>
         <div id="waveform" />
         {/* eslint-disable jsx-a11y/media-has-caption */}

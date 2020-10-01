@@ -1,7 +1,7 @@
-import React from 'react'
-import Highlight, { defaultProps } from 'prism-react-renderer'
+import React from 'react';
+import Highlight, { defaultProps } from 'prism-react-renderer';
 
-import dracula from 'prism-react-renderer/themes/ultramin/'
+import dracula from 'prism-react-renderer/themes/ultramin/';
 
 export const Code = ({ codeString, language }) => {
   return (
@@ -18,5 +18,5 @@ export const Code = ({ codeString, language }) => {
         </pre>
       )}
     </Highlight>
-  )
-}
+  );
+};

@@ -43,7 +43,7 @@ body::-webkit-scrollbar-thumb {
 .clearfix:after {
   visibility: hidden;
   display: block;
-  content: "";
+  content: '';
   clear: both;
   height: 0;
 }
@@ -53,16 +53,16 @@ body::-webkit-scrollbar-thumb {
   max-width: 1400px;
   margin: 0 auto;
   border-radius: $border-radius;
-  @include respond-to("desktop-15") {
+  @include respond-to('desktop-15') {
     padding: 0 5%;
   }
-  @include respond-to("tablet-large") {
+  @include respond-to('tablet-large') {
     padding: 0 5%;
   }
-  @include respond-to("mobile-large") {
+  @include respond-to('mobile-large') {
     padding: 0 5%;
   }
-  @include respond-to("mobile-small") {
+  @include respond-to('mobile-small') {
     padding: 0 2rem;
   }
 }
@@ -91,7 +91,7 @@ h1 {
   font-size: 5.1rem;
   text-align: center;
   color: $black;
-  @include respond-to("mobile-large") {
+  @include respond-to('mobile-large') {
     font-size: 3.1rem;
   }
 }
@@ -180,7 +180,7 @@ img:not([alt]) {
   width: 56ch;
   max-width: 100%;
   margin: 0 auto;
-  @include respond-to("mobile-large") {
+  @include respond-to('mobile-large') {
     padding: 2rem 0.1rem 4rem 4rem;
     margin: 0;
     width: 100%;
@@ -198,7 +198,7 @@ img:not([alt]) {
   margin-bottom: 4rem;
   width: 630px;
   max-width: 100%;
-  @include respond-to("tablet") {
+  @include respond-to('tablet') {
     padding-left: 0;
   }
   h2 {
@@ -210,12 +210,12 @@ img:not([alt]) {
     text-align: left;
     margin: 0;
     margin-bottom: 1.5rem;
-    @include respond-to("tablet") {
+    @include respond-to('tablet') {
       width: 100%;
       padding-right: 2rem;
       font-size: 4.3rem;
     }
-    @include respond-to("mobile-large") {
+    @include respond-to('mobile-large') {
       font-size: 4.3rem;
       margin-bottom: 0.5rem;
     }
@@ -230,7 +230,7 @@ img:not([alt]) {
     line-height: 1.6;
     font-family: $font-heading-regular;
     margin-left: 0.4rem;
-    @include respond-to("tablet") {
+    @include respond-to('tablet') {
       font-size: 1.6rem;
       padding-right: 2rem;
       line-height: 1.5;

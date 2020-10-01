@@ -20,13 +20,13 @@
     grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
     gap: 4rem;
     grid-gap: 4rem;
-    @include respond-to("tablet") {
+    @include respond-to('tablet') {
       grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     }
-    @include respond-to("mobile-large") {
+    @include respond-to('mobile-large') {
       grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     }
-    @include respond-to("mobile-small") {
+    @include respond-to('mobile-small') {
       grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     }
   }
@@ -79,7 +79,7 @@
       border-bottom-left-radius: $border-radius;
       border-bottom-right-radius: $border-radius;
       transition: 0.2s all ease-out;
-      @include respond-to("mobile-large") {
+      @include respond-to('mobile-large') {
         padding: 3.5rem 5%;
       }
     }

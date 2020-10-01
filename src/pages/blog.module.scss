@@ -14,7 +14,7 @@ li.post {
   border: 2px solid $border-color;
   border-radius: $border-radius;
   padding: 1rem;
-  @include respond-to("mobile-large") {
+  @include respond-to('mobile-large') {
     border: none;
     padding: 0;
   }
@@ -24,7 +24,7 @@ li.post {
   }
   &:active {
     border: 2px dashed $black;
-    @include respond-to("mobile-large") {
+    @include respond-to('mobile-large') {
       border: none;
       padding: 0;
     }
@@ -42,7 +42,7 @@ li.post {
     flex-direction: column;
     background: $color-main-hover;
     border-radius: $border-radius;
-    @include respond-to("mobile-large") {
+    @include respond-to('mobile-large') {
       flex-direction: column-reverse;
       border: none;
       border-left: 2px solid $border-color;
@@ -58,7 +58,7 @@ li.post {
       color: $black;
       background: darken($color-main-hover, 2);
       outline: none;
-      @include respond-to("mobile-large") {
+      @include respond-to('mobile-large') {
         background: none;
       }
     }
@@ -74,7 +74,7 @@ li.post {
 }
 .post:not(:last-child) {
   margin-bottom: 4rem;
-  @include respond-to("mobile-large") {
+  @include respond-to('mobile-large') {
     margin-bottom: 2rem;
   }
 }

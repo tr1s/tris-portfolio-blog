@@ -2,14 +2,14 @@
 ========================================================================== */
 .post-info {
   padding-bottom: 6rem;
-  @include respond-to("mobile-large") {
+  @include respond-to('mobile-large') {
     padding-bottom: 2rem;
   }
   h1 {
     font-size: 8.9rem;
     padding: 0 6rem;
     margin-top: -3rem;
-    @include respond-to("mobile-large") {
+    @include respond-to('mobile-large') {
       font-size: 4.3rem;
       padding: 2rem 2rem 0 2rem;
     }
@@ -25,7 +25,7 @@
     margin: 0 auto;
     padding-top: 5rem;
     padding-bottom: 1rem;
-    @include respond-to("mobile-large") {
+    @include respond-to('mobile-large') {
       padding-top: 3rem;
     }
   }
@@ -42,7 +42,7 @@
     minmax(1.2rem, 1fr)
     minmax(auto, 69ch)
     minmax(1.2rem, 1fr);
-  @include respond-to("mobile-large") {
+  @include respond-to('mobile-large') {
     grid-template-columns: 1fr;
   }
   & > * {
@@ -53,7 +53,7 @@
     font-size: 1.9rem;
     line-height: 1.6;
     letter-spacing: 0.06rem;
-    @include respond-to("mobile-large") {
+    @include respond-to('mobile-large') {
       font-size: 1.6rem;
     }
   }
@@ -69,7 +69,7 @@
       font-family: $font-mono-bold;
       font-size: 1.9rem;
       line-height: 1.5;
-      @include respond-to("mobile-large") {
+      @include respond-to('mobile-large') {
         font-size: 1.6rem;
       }
     }
@@ -91,13 +91,13 @@
   ul {
     padding-left: 4rem;
     list-style-type: disc;
-    @include respond-to("mobile-large") {
+    @include respond-to('mobile-large') {
       padding-left: 3rem;
     }
     li {
       font-size: 1.9rem;
       line-height: 1.6;
-      @include respond-to("mobile-large") {
+      @include respond-to('mobile-large') {
         font-size: 1.6rem;
       }
     }
@@ -105,13 +105,13 @@
   ol {
     padding-left: 4rem;
     list-style-type: decimal;
-    @include respond-to("mobile-large") {
+    @include respond-to('mobile-large') {
       padding-left: 3rem;
     }
     li {
       font-size: 1.9rem;
       line-height: 1.6;
-      @include respond-to("mobile-large") {
+      @include respond-to('mobile-large') {
         font-size: 1.6rem;
       }
     }
@@ -124,7 +124,7 @@
     border-radius: $border-radius;
     padding: 0.5rem 0.7rem;
     color: $black;
-    @include respond-to("mobile-large") {
+    @include respond-to('mobile-large') {
       padding: 0.3rem 0.6rem;
     }
   }
@@ -136,7 +136,7 @@
     font-family: $font-mono !important;
     border-radius: $border-radius;
     border: 1px solid rgba($color: #000000, $alpha: 0.1) !important;
-    @include respond-to("mobile-large") {
+    @include respond-to('mobile-large') {
       font-size: 1.6rem;
     }
   }
@@ -153,12 +153,12 @@ ul.navigate {
   justify-content: space-between;
   align-items: center;
   padding: 2.5rem;
-  @include respond-to("mobile-large") {
+  @include respond-to('mobile-large') {
     flex-direction: column;
     text-align: center;
   }
   li {
-    @include respond-to("mobile-large") {
+    @include respond-to('mobile-large') {
       align-self: stretch;
     }
   }
@@ -168,7 +168,7 @@ ul.navigate {
     width: 100%;
     border-radius: $border-radius;
     padding: 0 1rem 0 1rem;
-    @include respond-to("mobile-large") {
+    @include respond-to('mobile-large') {
       border-radius: 0;
     }
     &:hover,
@@ -180,7 +180,7 @@ ul.navigate {
     }
   }
   li:first-child a {
-    @include respond-to("mobile-large") {
+    @include respond-to('mobile-large') {
       margin-bottom: 2rem;
       border-bottom: 2px dashed $border-hover-color;
       padding: 0 0 2rem 0;

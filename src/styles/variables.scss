@@ -1,14 +1,14 @@
 /* Global variables
 ========================================================================== */
 
-$font-heading: "Miller Banner Light", serif;
-$font-heading-regular: "Miller Banner Book", serif;
-$font-heading-bold: "Miller Banner Semibold", serif;
-$font-body-medium: "Hind SemiBold", -apple-system, sans-serif;
-$font-body-bold: "Hind Bold", -apple-system, sans-serif;
-$font-body: "Hind Regular", -apple-system, sans-serif;
-$font-mono: "Magda", monospace;
-$font-mono-bold: "Magda Bold", monospace;
+$font-heading: 'Miller Banner Light', serif;
+$font-heading-regular: 'Miller Banner Book', serif;
+$font-heading-bold: 'Miller Banner Semibold', serif;
+$font-body-medium: 'Hind SemiBold', -apple-system, sans-serif;
+$font-body-bold: 'Hind Bold', -apple-system, sans-serif;
+$font-body: 'Hind Regular', -apple-system, sans-serif;
+$font-mono: 'Magda', monospace;
+$font-mono-bold: 'Magda Bold', monospace;
 
 $border-radius: 6px;
 $border-color: darken(#f1f3f5, 2);

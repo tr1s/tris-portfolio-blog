@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-blog",
+  "name": "tris.codes",
   "private": true,
-  "description": "A starter for a blog powered by Gatsby and Markdown",
+  "description": "Tristan's digital garden.",
   "version": "0.1.0",
-  "author": "Tristan Lawrence <tris.analog@gmail.com>",
+  "author": "Tristan Lawrence <trislaw@gmail.com>",
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
@@ -43,8 +43,9 @@
     "wavesurfer.js": "^4.1.1"
   },
   "devDependencies": {
-    "prettier": "^2.1.2",
-    "standard": "^14.3.4"
+    "eslint": "^7.10.0",
+    "eslint-config-prettier": "^6.12.0",
+    "eslint-config-react-app": "^5.2.1"
   },
   "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
   "keywords": [
@@ -58,13 +59,10 @@
   },
   "scripts": {
     "dev": "gatsby develop",
-    "lint": "eslint --ext .js,.jsx --ignore-pattern public .",
-    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\"",
     "check": "npx npm-check-updates -u",
-    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js' 'src/**/*.md'",
+    "format": "prettier --write 'src/'",
     "develop": "gatsby develop",
     "start": "npm run develop",
-    "build": "gatsby build",
-    "fix-semi": "eslint --quiet --ignore-pattern node_modules --ignore-pattern public --parser babel-eslint --no-eslintrc --rule '{\"semi\": [2, \"never\"], \"no-extra-semi\": [2]}' --fix gatsby-node.js"
+    "build": "gatsby build"
   }
 }
