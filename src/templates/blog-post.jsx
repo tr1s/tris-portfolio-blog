@@ -16,6 +16,7 @@ class BlogPostTemplate extends Component {
     const siteTitle = this.props.data.site.siteMetadata.title;
     const { previous, next } = this.props.pageContext;
     console.log('Page context:', this.props.pageContext);
+    console.log('post:', post);
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
@@ -24,10 +25,7 @@ class BlogPostTemplate extends Component {
         <section className={`inner-wrapper ${BlogPostStyles.postWrapper}`}>
           {/* QUOTE */}
           <p className="quote">
-            <em>
-              "A post explaining the current article "New Beginnings in a Time of Uncertainty"{' '}
-              <span>— Tristan</span>
-            </em>
+            <em>{post.excerpt}</em>
           </p>
 
           {/* POST INFO */}
@@ -85,6 +83,9 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
+        tags
+        excerpt
+        published
       }
       body
       timeToRead
