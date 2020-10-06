@@ -1,0 +1,20 @@
+.thankyou {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10rem;
+  h1 {
+    width: 400px;
+    text-align: left;
+    margin-bottom: 1rem;
+  }
+  p {
+    width: 400px;
+    text-align: left;
+  }
+  a {
+    width: 400px;
+    text-align: left;
+  }
+}

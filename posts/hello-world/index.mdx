@@ -1,10 +1,18 @@
 ---
 title: Hello World!
-date: '2020-10-02'
+date: '2020-10-06'
 tags: [test, personal]
-excerpt: This is a test post that will display all the stylings of my blog. What will I write next? Find out next time on...
-published: false
+excerpt: This is a breif excerpt section that will display some information about the article below. What will I write next? Find out next time on...
+published: true
 ---
+
+**Hello World**. This is my first test-post displaying all of the different elements that may show up in a blog post that I write.
+
+I had a lot of fun designing this website / <a href="https://joelhooks.com/digital-garden" target="_blank" rel="noopener noreferrer">digital garden</a>. There's a lot more I coulda woulda shoulda done with this site, but I had to put my perfectionism aside and just let it be as it is.
+
+I just needed a simple space for me to share thoughts and knowledge while I go focus on honing my skillsets in front-end development and music production.
+
+🌱
 
 <!-- Headings -->
 
@@ -20,33 +28,29 @@ published: false
 
 <!-- Texts -->
 
-Here's some basic text
+Basic text
 
-Here's some _italics_
+_Italic_ text
 
-Here's some **bold** text
+**Bold** text
 
-Here's some **_bold italics_** text
+**_Bold italic_** text
 
-Here's some ~~strikethrough~~ text
+~~Strikethrough~~ text
 
 <!-- Links -->
 
-Link that opens in same tab:
-
-[Click here](https://google.com)
-
-Link that opens to new tab:
+[Link that opens in same tab](https://google.com)
 
 <a href="https://google.com" target="_blank">
-  Example (fix this)
+  Link that opens to new tab (add icon?)
 </a>
 
 <!-- Image -->
 
 Image with an alt tag:
 
-![Some image](../images/somePhoto.jpeg)
+![Test image.](./test-two.jpg)
 
 Image from component w/ MDX:
 
@@ -54,46 +58,50 @@ import Image from '../../src/components/Image.jsx';
 
 <Image />
 
-#### Numbered lists:
+1. Numbered list
+2. Numbered list
+   1. Nested number list
+   2. Nested number list
 
-1. First
-2. Second
-   1. One
-   2. Two
+- Unordered list
+- Unordered list
+  - Nested unordered list
+  - Nested unordered list
 
-<!-- Lists - unordered -->
-
-- List
-- List
-  - Child List
-  - Child List
-
-<!-- blockquote -->
-
-> Here is example of blockquote
+> Here is example of blockquote!
 >
-> Est est ipsum tempor eu occaecat. Duis commodo laboris voluptate reprehenderit minim laborum ad deserunt ut magna. Lorem laborum ut officia eu nulla pariatur nulla eiusmod aliquip. Fugiat laboris consectetur tempor anim fugiat.
+> Est est ipsum tempor eu occaecat. Duis commodo laboris voluptate reprehenderit minim laborum ad deserunt ut magna. Lorem laborum ut officia eu nulla pariatur nulla eiusmod aliquip.
 
-<!-- Nested blockquote -->
+Example of an `inline code block`
 
-> > Cupidatat aute ea incididunt dolor mollit ipsum. Eu culpa dolor deserunt nostrud do et commodo consequat. Fugiat tempor sunt qui laborum nulla nostrud eu dolore voluptate non in. Id exercitation consectetur elit voluptate ea et nulla ea ea amet labore sunt ullamco ullamco.
+```html
+<!-- HTML code block: -->
 
-> > > Cupidatat aute ea incididunt dolor mollit ipsum. Eu culpa dolor deserunt nostrud do et commodo consequat. Fugiat tempor sunt qui laborum nulla nostrud eu dolore voluptate non in. Id exercitation consectetur elit voluptate ea et nulla ea ea amet labore sunt ullamco ullamco.
+<h1 class="title">Hello World</h1>
+```
 
-<!-- Inline code -->
+```css
+/* CSS code block: */
 
-Here is `in-line code block` example
+body {
+  margin: 0;
+}
 
-<!-- Code block -->
+.title {
+  color: skyblue;
+}
+```
 
 ```js
+// JavaScript code block:
+
 const name = 'Ellis';
 console.log(name);
 ```
 
-<!-- Code block (highlight) -->
-
 ```jsx
+// React code block with line & multiline highlighting:
+
 // highlight-start
 import React, { Component } from 'react';
 class Profile extends Component {
@@ -105,13 +113,15 @@ class Profile extends Component {
 export default Profile;
 ```
 
-<!-- Code block with title -->
-
-```js:title=example.js
-const number 1234;
+```
+Code and/or output block:
 ```
 
-<!-- Diff -->
+```js:title=example.js
+Custom title code block fix this?
+```
+
+Diff code block:
 
 ```diff
 + {
@@ -124,3 +134,11 @@ const number 1234;
 + }
 + export default SomeClass
 ```
+
+That's all for now!
+
+Sign up below to get updates on new articles.
+
+Much love,
+
+Tris 🕊🌙

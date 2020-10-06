@@ -1,7 +1,7 @@
 const path = require('path');
 const { createFilePath } = require('gatsby-source-filesystem');
 
-exports.onCreateNode = ({ node, actions, getNode }) => {
+exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions;
 
   if (node.internal.type === 'Mdx') {
@@ -22,7 +22,11 @@ exports.createPages = async ({ graphql, actions }) => {
   const result = await graphql(
     `
       {
-        allMdx(sort: { fields: [frontmatter___date], order: DESC }, limit: 1000) {
+        allMdx(
+          sort: { fields: [frontmatter___date], order: DESC }
+          limit: 1000
+          filter: { frontmatter: { published: { eq: true } } }
+        ) {
           edges {
             node {
               id
@@ -30,13 +34,18 @@ exports.createPages = async ({ graphql, actions }) => {
                 slug
               }
               frontmatter {
+                tags
                 title
                 date
-                tags
                 excerpt
                 published
               }
               body
+              timeToRead
+              tableOfContents
+              fields {
+                slug
+              }
             }
           }
         }
@@ -49,6 +58,7 @@ exports.createPages = async ({ graphql, actions }) => {
   }
 
   const posts = result.data.allMdx.edges;
+  // const privatePosts = privateResults.data.allMdx.edges;
 
   posts.forEach((post, index) => {
     const previous = index === posts.length - 1 ? null : posts[index + 1].node;

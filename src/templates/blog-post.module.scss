@@ -1,6 +1,5 @@
 /* Blog Post styles
 ========================================================================== */
-
 .post-info {
   padding-bottom: 6rem;
   @include respond-to('mobile-large') {
@@ -41,19 +40,18 @@
   display: grid;
   grid-template-columns:
     minmax(1.2rem, 1fr)
-    minmax(auto, 69ch)
+    minmax(auto, 79ch)
     minmax(1.2rem, 1fr);
   @include respond-to('mobile-large') {
     grid-template-columns: 1fr;
   }
   & > * {
     grid-column: 2;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
   }
   & > p {
     font-size: 1.9rem;
     line-height: 1.6;
-    letter-spacing: 0.06rem;
     @include respond-to('mobile-large') {
       font-size: 1.6rem;
     }
@@ -65,9 +63,9 @@
     border-radius: $border-radius;
     border-left: 0.6rem solid $black;
     p {
-      color: $silver;
-      padding-left: 2rem;
-      font-family: $font-mono-bold;
+      color: $grey;
+      padding-left: 1.5rem;
+      font-family: $font-mono;
       font-size: 1.9rem;
       line-height: 1.5;
       @include respond-to('mobile-large') {
@@ -78,11 +76,16 @@
   & > img {
     grid-column: 1 / 4;
     border: 14px solid $black;
+    float: left;
   }
   a {
     color: $color-link;
     font-family: $font-body-medium;
     transition: 0.1s color linear;
+    font-size: 1.9rem;
+    @include respond-to('mobile-large') {
+      font-size: 1.6rem;
+    }
     &:hover,
     &:focus {
       color: darken($color-link, 14);
@@ -133,10 +136,15 @@
     font-size: 1.9rem;
     line-height: 1.4;
     padding: 2rem;
-    overflow-x: scroll;
-    font-family: $font-mono !important;
-    border-radius: $border-radius;
-    border: 1px solid rgba($color: #000000, $alpha: 0.1) !important;
+    // overflow-x: auto;
+    // overflow-x: scroll;
+    font-family: $font-mono-bold !important;
+    border: 1px solid rgba(#ededed, $alpha: 1) !important;
+    border: 1px solid $border-color !important;
+    &:hover,
+    &:focus {
+      border: 1px solid $border-hover-color !important;
+    }
     @include respond-to('mobile-large') {
       font-size: 1.6rem;
     }

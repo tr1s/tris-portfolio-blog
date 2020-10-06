@@ -1,0 +1,94 @@
+:root {
+  --code-font-family: $font-body, Menlo, 'Roboto Mono', Courier New, monospace;
+  --code-font-color: #b3b9c5;
+  --code-background-color: #353535;
+  --string: #92d192;
+  --variable: #f2777a;
+  --property: #abb2bf;
+  --number: #fca369;
+  --operator: #ac8d58;
+  --punctuation: #d5d8df;
+  --comment: #848991;
+  --function: #62cfcf;
+  --keyword: #ffeead;
+  --attribute: #ffd479;
+  --class: #e1a6f2;
+  --tag: #6ab0f3;
+  --error: #f2777a;
+}
+
+.gatsby-highlight {
+  position: relative;
+  width: 100%;
+  pre {
+    margin-top: 0 !important;
+  }
+}
+.gatsby-highlight[data-language='html'] {
+  color: $black;
+  font-family: $font-mono-bold;
+  pre {
+    padding-top: 2rem;
+  }
+  &::before {
+    content: 'html';
+    position: absolute;
+    background: $border-color;
+    padding: 0.4rem 1rem;
+    padding-top: 0.5rem;
+    padding-right: 0.8rem;
+    top: 1px;
+    right: 1px;
+    border-top-right-radius: 2px;
+  }
+}
+.gatsby-highlight[data-language='css'] {
+  color: $black;
+  font-family: $font-mono-bold;
+  pre {
+    padding-top: 2rem;
+  }
+  &::before {
+    content: 'css';
+    position: absolute;
+    background: $border-color;
+    padding: 0.4rem 1rem;
+    padding-top: 0.5rem;
+    padding-right: 0.8rem;
+    top: 1px;
+    right: 1px;
+    border-top-right-radius: 2px;
+  }
+}
+.gatsby-highlight[data-language='js'] {
+  color: $black;
+  font-family: $font-mono-bold;
+  pre {
+    padding-top: 2rem;
+  }
+  &::before {
+    content: 'js';
+    position: absolute;
+    background: $border-color;
+    padding: 0.4rem 1rem;
+    padding-top: 0.5rem;
+    padding-right: 0.8rem;
+    top: 1px;
+    right: 1px;
+    border-top-right-radius: 2px;
+  }
+}
+.token.inserted-sign.inserted {
+  // color: $color-secondary !important;
+}
+.token.deleted-sign.deleted {
+  color: $red !important;
+}
+.gatsby-highlight-code-line {
+  background-color: lighten(#e8e8e8, 4);
+  display: block;
+  margin-right: -2rem;
+  margin-left: -2rem;
+  padding: 0 1rem;
+  border-left: 0.6rem solid $light-pink;
+}

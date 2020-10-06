@@ -7,7 +7,7 @@ import Newsletter from '../components/Newsletter/Newsletter';
 
 import blogStyles from './blog.module.scss';
 
-const Blog = (props) => {
+const Private = (props) => {
   const { site, allMdx } = useStaticQuery(graphql`
     query {
       site {
@@ -17,7 +17,7 @@ const Blog = (props) => {
       }
       allMdx(
         sort: { fields: [frontmatter___date], order: DESC }
-        filter: { frontmatter: { published: { eq: true } } }
+        filter: { frontmatter: { published: { eq: false } } }
       ) {
         edges {
           node {
@@ -53,18 +53,7 @@ const Blog = (props) => {
             </p>
 
             <div className="page-info blog">
-              <h2 className={blogStyles.title}>Blog _</h2>
-              <p>
-                I plan to occasionally write about topics I'm interested in to help{' '}
-                <a
-                  href="https://golden.com/wiki/Feynman_Technique"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  solidify my understanding
-                </a>{' '}
-                of them while ideally helping others in the process:
-              </p>
+              <h2 className={blogStyles.title}>Private _</h2>
             </div>
 
             <ol className={blogStyles.postContainer}>
@@ -91,4 +80,4 @@ const Blog = (props) => {
   );
 };
 
-export default Blog;
+export default Private;

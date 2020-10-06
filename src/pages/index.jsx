@@ -11,6 +11,7 @@ import me from '../assets/images/home/mee.jpg';
 
 import '../styles/normalize.scss';
 import '../styles/typography.scss';
+import '../styles/code.scss';
 import '../styles/global.scss';
 import indexStyles from './index.module.scss';
 
