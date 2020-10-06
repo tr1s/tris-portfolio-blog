@@ -35,15 +35,16 @@
   }
 }
 
-.post {
+article.post {
   font-family: $font-body;
   display: grid;
   grid-template-columns:
     minmax(1.2rem, 1fr)
     minmax(auto, 79ch)
     minmax(1.2rem, 1fr);
-  @include respond-to('mobile-large') {
-    grid-template-columns: 1fr;
+  @include respond-to('tablet') {
+    display: flex;
+    flex-direction: column;
   }
   & > * {
     grid-column: 2;
@@ -137,7 +138,7 @@
     line-height: 1.4;
     padding: 2rem;
     // overflow-x: auto;
-    // overflow-x: scroll;
+    overflow-x: scroll;
     font-family: $font-mono-bold !important;
     border: 1px solid rgba(#ededed, $alpha: 1) !important;
     border: 1px solid $border-color !important;

@@ -32,7 +32,7 @@ class BlogPostTemplate extends Component {
           <div className={BlogPostStyles.postInfo}>
             <h1>{post.frontmatter.title}</h1>
             <p>{post.frontmatter.date}</p>
-            <img className={BlogPostStyles.reading} src={reading} alt="" />
+            {/* <img className={BlogPostStyles.reading} src={reading} alt="" /> */}
             <p>{post.timeToRead} minute read</p>
             <div>...............</div>
           </div>

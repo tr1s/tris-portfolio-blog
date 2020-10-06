@@ -1,20 +1,26 @@
 .thankyou {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   padding: 10rem;
   h1 {
     width: 400px;
     text-align: left;
-    margin-bottom: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    img {
+      width: 8rem;
+      margin-left: 2rem;
+      margin-top: -0.5rem;
+    }
   }
   p {
     width: 400px;
-    text-align: left;
   }
   a {
-    width: 400px;
-    text-align: left;
+    // width: 400px;
+    // text-align: left;
   }
 }

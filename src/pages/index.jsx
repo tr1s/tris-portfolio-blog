@@ -1,11 +1,10 @@
 import React from 'react';
-import { graphql, useStaticQuery } from 'gatsby';
 import Newsletter from '../components/Newsletter/Newsletter';
 
 import Layout from '../components/Layout/Layout';
 import Head from '../components/head';
 import Projects from '../components/Projects/Projects';
-import Button from '../components/Button/Button';
+// import Button from '../components/Button/Button';
 
 import me from '../assets/images/home/mee.jpg';
 
@@ -16,20 +15,8 @@ import '../styles/global.scss';
 import indexStyles from './index.module.scss';
 
 const Home = (props) => {
-  const { site } = useStaticQuery(graphql`
-    query {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `);
-
-  const siteTitle = site.siteMetadata.title;
-
   return (
-    <Layout location={props.location} title={siteTitle}>
+    <Layout location={props.location}>
       <Head title="All posts" />
 
       <div className="inner-wrapper">

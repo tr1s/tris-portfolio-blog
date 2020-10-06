@@ -1,11 +1,13 @@
 module.exports = {
   siteMetadata: {
-    title: 'tris',
+    title: 'Tris',
     author: 'Tristan Lawrence',
-    description: 'Frontend Engineer | Digital Creative | Music producer',
-    siteUrl: 'https://tris.codes/',
+    description:
+      'Tristan Lawrence is a front-end engineer, digital creative, and music producer. This is my digital garden. 🌱🎶',
+    siteUrl: 'https://tris.codes',
     social: {
       twitter: 'triscodes',
+      instagram: 'tris.codes',
     },
   },
   plugins: [
