@@ -7,8 +7,6 @@ import Head from '../components/head';
 import Newsletter from '../components/Newsletter/Newsletter';
 import Comment from '../components/Comment/Comment.jsx';
 
-// import reading from '../assets/images/blog/reading.svg';
-
 import BlogPostStyles from './blog-post.module.scss';
 
 const BlogPostTemplate = (props) => {
@@ -40,7 +38,7 @@ const BlogPostTemplate = (props) => {
     <Layout location={props.location} title={siteTitle}>
       <Head title={post.frontmatter.title} description={post.excerpt} />
 
-      <section className={`inner-wrapper ${BlogPostStyles.postWrapper}`}>
+      <section className={BlogPostStyles.postWrapper}>
         {/* QUOTE */}
         <p className="quote">
           <em>{post.excerpt}</em>
@@ -50,7 +48,6 @@ const BlogPostTemplate = (props) => {
         <div className={BlogPostStyles.postInfo}>
           <h1>{post.frontmatter.title}</h1>
           <p>{post.frontmatter.date}</p>
-          {/* <img className={BlogPostStyles.reading} src={reading} alt="" /> */}
           <p>{post.timeToRead} minute read</p>
           <div>...............</div>
         </div>

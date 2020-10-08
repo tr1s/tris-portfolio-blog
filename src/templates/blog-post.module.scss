@@ -1,9 +1,22 @@
 /* Blog Post styles
 ========================================================================== */
+.post-wrapper {
+  @include respond-to('tablet') {
+    top: 0;
+    max-width: 1400px;
+    margin: 0 auto;
+    border-radius: $border-radius;
+    padding: 0 5%;
+  }
+  @include respond-to('mobile-small') {
+    padding: 0 2rem;
+  }
+}
+
 .post-info {
   padding-bottom: 6rem;
   @include respond-to('mobile-large') {
-    padding-bottom: 2rem;
+    padding-bottom: 5.2rem;
   }
   h1 {
     font-size: 8.9rem;
@@ -11,7 +24,7 @@
     margin-top: -3rem;
     @include respond-to('mobile-large') {
       font-size: 4.3rem;
-      padding: 2rem 2rem 0 2rem;
+      padding: 4rem 2rem 0 2rem;
     }
   }
   p {
@@ -48,7 +61,7 @@ article.post {
   }
   & > * {
     grid-column: 2;
-    margin-bottom: 3rem;
+    margin-bottom: 3.5rem;
   }
   & > p {
     font-size: 1.9rem;
@@ -76,7 +89,6 @@ article.post {
   }
   & > img {
     grid-column: 1 / 4;
-    border: 14px solid $black;
     float: left;
   }
   a {
@@ -163,6 +175,9 @@ article.post .comments {
 
 ul.navigate {
   grid-column: 1 / 4;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
   list-style-type: none !important;
   margin-bottom: 0;
   border: 2px solid darken(#f1f3f5, 2);

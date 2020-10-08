@@ -77,11 +77,29 @@
     border-top-right-radius: 2px;
   }
 }
+.gatsby-highlight[data-language='jsx'] {
+  color: $black;
+  font-family: $font-mono-bold;
+  pre {
+    padding-top: 2rem;
+  }
+  &::before {
+    content: 'jsx';
+    position: absolute;
+    background: $border-color;
+    padding: 0.4rem 1rem;
+    padding-top: 0.5rem;
+    padding-right: 0.8rem;
+    top: 1px;
+    right: 1px;
+    border-top-right-radius: 2px;
+  }
+}
 .token.inserted-sign.inserted {
   // color: $color-secondary !important;
 }
 .token.deleted-sign.deleted {
-  color: $red !important;
+  color: $color-secondary !important;
 }
 .gatsby-highlight-code-line {
   background-color: lighten(#e8e8e8, 4);

@@ -1,6 +1,6 @@
 ---
 title: Hello World!
-date: '2020-10-06'
+date: '2020-10-08'
 tags: [test, personal]
 excerpt: This is a breif excerpt section that will display some information about the article below. What will I write next? Find out next time on...
 published: true
@@ -45,20 +45,20 @@ _Italic_ text
 [Link that opens in same tab](https://google.com)
 
 <a href="https://google.com" target="_blank">
-  Link that opens to new tab (add icon?)
+  Link that opens to a new tab
 </a>
 
 <!-- Image -->
 
-Image with an alt tag:
+Image:
 
-![Test image.](./test-two.jpg)
+![Test image.](./test-thin.jpg)
 
-Image from component w/ MDX:
+Full-bleed image:
 
-import Image from '../../src/components/Image.jsx';
+import testImage from './test-larger.jpg';
 
-<Image />
+<img src={testImage} alt="Renaissance sculptured man." />
 
 1. Numbered list
 2. Numbered list
@@ -70,8 +70,8 @@ import Image from '../../src/components/Image.jsx';
   - Nested unordered list
   - Nested unordered list
 
-> Here is example of blockquote!
->
+Blockquote:
+
 > Est est ipsum tempor eu occaecat. Duis commodo laboris voluptate reprehenderit minim laborum ad deserunt ut magna. Lorem laborum ut officia eu nulla pariatur nulla eiusmod aliquip.
 
 Example of an `inline code block`
