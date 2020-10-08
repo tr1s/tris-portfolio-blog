@@ -152,6 +152,15 @@ article.post {
   }
 }
 
+article.post .comments {
+  h2 {
+    margin-bottom: 1rem;
+    margin-left: 4px;
+  }
+  margin-left: -4px;
+  margin-right: -4px;
+}
+
 ul.navigate {
   grid-column: 1 / 4;
   list-style-type: none !important;
