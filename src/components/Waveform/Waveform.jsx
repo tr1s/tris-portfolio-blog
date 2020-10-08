@@ -25,7 +25,7 @@ class Waveform extends React.Component {
     });
 
     this.wavesurfer.load(audio, peaks);
-    console.log(peaks.length);
+    // console.log(peaks.length);
   }
 
   playIt = () => {

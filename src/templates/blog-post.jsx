@@ -13,8 +13,6 @@ const BlogPostTemplate = (props) => {
   const post = props.data.mdx;
   const siteTitle = props.data.site.siteMetadata.title;
   const { previous, next } = props.pageContext;
-  console.log('Page context:', props.pageContext);
-  console.log('post:', post);
 
   const commentBox = React.createRef();
 
