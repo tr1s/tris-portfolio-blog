@@ -9,13 +9,19 @@ function Footer() {
         <div className={footerStyles.footerContainer}>
           <ul className={footerStyles.footerLinks}>
             <li>
-              <a href="https://google.com">GitHub</a>
+              <a href="https://github.com/tr1s" target="_blank" rel="noopener noreferrer">
+                GitHub
+              </a>
             </li>
             <li>
-              <a href="https://google.com">Twitter</a>
+              <a href="https://twitter.com/triscodes" target="_blank" rel="noopener noreferrer">
+                Twitter
+              </a>
             </li>
             <li>
-              <a href="https://google.com">Email</a>
+              <a href="mailto:trislaw@gmail.com" target="_blank" rel="noopener noreferrer">
+                Email
+              </a>
             </li>
           </ul>
 
